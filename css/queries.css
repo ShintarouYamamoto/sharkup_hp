@@ -121,6 +121,7 @@ main .btn{
 @media screen and (max-width:575.98px) {
 .navbar-collapse .btn {
     margin: 10px auto;
+    color: black;
 }
     
 /* トップページ：各セクション */
