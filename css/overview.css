@@ -29,6 +29,7 @@ body {
 .company-info table {
     width: 100%;
     border-collapse: collapse;
+    height:60vh;
 }
 .company-info table, .company-info th, .company-info td {
     border: 1px solid #ddd;
@@ -36,17 +37,24 @@ body {
 }
 .company-info th {
     background-color: #f2f2f2;
+    color :#997D67;
+    font-size: 1.1rem;
 }
 .access-map {
     text-align: center;
     margin-top: 10vh;
 }
-.access-map img {
+.access-map iframe {
     max-width: 100%;
-    height: auto;
+    height: 60vh;
     margin-top: 5vh;
+    width:60vw; 
 }
 
+.company-info td{
+    font-size: 1.1rem;
+
+}
 
 /* *****共通設定***** */
 
