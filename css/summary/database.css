@@ -12,11 +12,11 @@ section {
     background-color: #C8E2E6;
     margin-bottom: 20px;
 }
-/* .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-} */
+}
 .section-content h2{
     color: #111;
     font-size: 3.5rem;
