@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/* *****共通設定***** */
+
+main {
+    display: block;
+    background-color: #EAF6FD;
+}
+
+
+/* ヘッダー(navbar) */
+.navbar {
+    border-bottom: 1px solid #EAF6FD;
+    background-color: #EAF6FD;
+}
+
+.navbar .navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
+}
+
+.navbar .navbar-brand img {
+    height: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #C8E2E6;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:focus {
+    color: #C8E2E6;
+    /* クリック後や訪問済みリンクの色を指定 */
+}
+
+
+/* フッター */
+#footer {
+    background-color: #C8E2E6;
+}
+
+#footer .container {
+    color: #000;
+}
+
+#footer .footer-ttl {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #997D67;
+}
+
+#footer address p,
+#footer #footer-news li {
+    margin-bottom: 0.5rem;
+}
+
+#footer #footer-news ul {
+    margin: 0;
+    padding: 0
+}
+
+#footer #footer-news ul {
+    list-style: none;
+}
+
+#footer #footer-news li span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#footer #copyright {
+    border-top: 1px solid #997D67;
+    background-color: #997D67;
+    color: #e0c7b2;
+}
+
+#footer img {
+    width: 360px;
+}
+
+/* 各セクション */
+#page-top section {
+    border-bottom: 1px solid #EAF6FD;
+    background-color: #EAF6FD;
+    padding: 5rem 0;
+}
+
+#page-top section:nth-child(odd) {
+    background-color: #C8E2E6;
+}
+
+#page-top section .container>h2 {
+    margin-bottom: 30px;
+}
+
+#page-top section .container>h2+p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #997D67;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 1.8rem;
+    color: #997D67;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+/* *****vision***** */
+.vision-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    /* 全体のテキストを左寄せにする */
+}
+
+.vision-title {
+    font-size: 4rem;
+    color: #997D67;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    /* タイトルを左寄せ */
+}
+
+.vision-subtitle {
+    font-size: 3rem;
+    color: #997D67;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+    /* サブタイトルを左寄せ */
+}
+
+.vision-description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: left;
+    /* 説明文を左寄せ */
+}
+
+/* 画像のスタイル */
+.vision-image {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    /* 画像の最大幅を調整 */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    /* ホバー時のアニメーション効果 */
+}
+
+.vision-image:hover {
+    transform: scale(1.05);
+    /* ホバー時に少し拡大 */
+}
+
+
+/* ***** NEWSセクション ***** */
+.section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #997D67;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-item {
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-header {
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    color: #401f0f;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.news-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.slideshow {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideshow .slider {
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
+}
+
+.slideshow .slider * {
+    outline: none;
+}
+
+.slideshow .slider .item {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.slideshow .slider .item .text {
+    display: none;
+}
+
+.slideshow .slider .item img {
+    min-width: 101%;
+    min-height: 101%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slideshow .slick-dots {
+    position: fixed;
+    z-index: 100;
+    width: 40px;
+    height: auto;
+    bottom: auto;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    left: auto;
+    color: #fff;
+    display: block;
+}
+
+.slideshow .slick-dots li {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow .slick-dots li button {
+    position: relative;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+}
+
+.slideshow .slick-dots li button:before {
+    content: '';
+    background: #fff;
+    color: #fff;
+    height: 2px;
+    width: 20px;
+    border-radius: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: auto;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+    opacity: 0.6;
+}
+
+.slideshow .slick-dots li.slick-active button:before {
+    width: 40px;
+    opacity: 1;
+}
+
+.slideshow.slideshow-right {
+    left: 0;
+    z-index: 1;
+    width: 50vw;
+    pointer-events: none;
+}
+
+.slideshow.slideshow-right .slider {
+    left: 0;
+    position: absolute;
+}
+
+.slideshow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 80px;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    line-height: 0.8;
+}
+
+@media (max-width: 767px) {
+    .slideshow-text {
+        font-size: 40px;
+    }
+}
+
+.the-most {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 50vw;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.the-most img {
+    max-width: 100%;
+}
