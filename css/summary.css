@@ -2,31 +2,111 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #EAF6FD;
-    color: #333;
+    background-color: #fff;
+    color: #181818;
     margin: 0;
     padding: 0;
 }
 section {
     padding: 40px 20px;
-    background-color: #C8E2E6;
+    /* background-color: #ffffff; */
     margin-bottom: 20px;
 }
+
 .head_continer{
     height: 100%;
 }
 .head-content {
-    /* flex-basis: 47%; */
     padding: 0 20px;
     color:#EAF6FD;
+
+}
+.head-content h1{
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 .summary{
     background-image: url("../img/summary5.png");
     background-repeat:no-repeat;
     background-size: cover;
-    height:85vh;
-    /* padding-top:30vh;
-    padding-bottom: 30vh; */
+    height:20vh;
+}
+
+/* ファーストビュー */
+.hero_top{
+    font-family: 'Noto Sans JP', sans-serif;
+    /* height: 45vh; */
+    margin:13vh auto 11vh auto;
+}
+
+.hero_top h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero_top p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 5vh;
+}
+
+/* メイン */
+.job{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.job h2{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 10vh;
+}
+.job p{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* ボタンスタイル */
+.next-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #007BFF; /* 青系の背景色 */
+    color: white; /* 白いテキスト */
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ほんのり影 */
+}
+
+/* ホバー時の効果 */
+.next-btn:hover {
+    background-color: #0056b3; /* 濃い青色 */
+    transform: translateY(-3px); /* 少し浮かび上がる */
+    text-decoration: none;
+}
+
+/* 知的な印象を与える軽いアニメーション */
+.next-btn:active {
+    transform: translateY(0); /* クリック時に元に戻す */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* お問い合わせ */
+.question{
+    margin-top: 13vh;
+    margin-bottom: 10vh;
+}
+.text-content{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.text-content h2{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+}
+
+.text-content p{
+    font-size: 1.1rem;
+    font-weight: normal;
 }
 
 .cta-button {
@@ -36,63 +116,56 @@ section {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 2vh;
 }
-/* .center-question{
-    text-align: center;
-}
-.center-question h2{
-    font-weight: bolder;
-} */
+
 
 /*レスポンシブ*/
+@media screen and (max-width: 780px) {
+    /* トップ */
+    .hero_top{
+        /* height: 40vh; */
+        /* margin:10vh auto 20vh auto; */
+    }
+    
+    .hero_top h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .hero_top p{
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-top: 5vh;
+    }
+    /* メイン */
+    .job h2{
+        margin-bottom: 5vh;
+    }
+}
 
 
 
-/* *****共通設定***** */
-/* 
-main{
-    display: block;
-    background-color: #EAF6FD;
-}
-main .btn{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    font-size: 1.5rem;
-}
-h1 { font-size: 4.5rem; }
-h2, h3{
-   color: #401f0f;
-}
-.gray {
-    color: #6c757d;
-}
-.card{
-    border-color: #e0c7b2;
-}
-.img-thumbnail {
-    width: 100%;
-    padding: .25rem;
-    background-color: transparent;
-    border: none;
-} */
 
 /* ヘッダー(navbar) */
-.navbar{
+.navbar {
     border-bottom: 1px solid #EAF6FD;
     background-color: #EAF6FD;
 }
-.navbar .navbar-collapse{
+
+.navbar .navbar-collapse {
     flex-grow: 0;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-brand{
-    width: 5vw;
-    height:5vh;
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 100%;
 }
 

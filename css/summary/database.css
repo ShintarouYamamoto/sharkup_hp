@@ -2,167 +2,53 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #EAF6FD;
-    color: #333;
+    background-color: #fff;
+    color: #181818;
     margin: 0;
     padding: 0;
 }
 section {
     padding: 40px 20px;
-    background-color: #C8E2E6;
     margin-bottom: 20px;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+
+.head_continer{
+    height: 100%;
 }
-.section-content h2{
-    color: #111;
-    font-size: 3.5rem;
-}
-.section-content {
-    justify-content:space-between;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.section-content img {
-    max-width: 47%;
-    height: auto;
-    flex-basis: 40%;
-}
-.text-content {
-    flex-basis: 47%;
+.head-content {
     padding: 0 20px;
+    color:#EAF6FD;
+    margin: 0 auto;
 }
-.reverse {
-    flex-direction: row-reverse;
-    width:98%;
+.head-content h1{
+    font-weight: bold;
+    font-size: 2.5rem;
 }
+
 .summary{
-    background-image: url("../img/summary5.png");
+    background-image: url("../../img/summary5.png");
     background-repeat:no-repeat;
     background-size: cover;
-    padding-top:30vh;
-    padding-bottom: 30vh;
+    height:20vh;
 }
-.center-content {
-    text-align: center;
+
+/* ファーストビュー */
+.hero_top{
+    font-family: 'Noto Sans JP', sans-serif;
+    /* height: 45vh; */
+    margin:13vh auto 11vh auto;
 }
-.center-content h2{ 
-    font-size: 3.5rem;
+
+.hero_top h1{
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 5%;
-    color:#EAF6FD;
 }
-.center-content p{
-    color:#EAF6FD;
+.hero_top p{
     font-size: 1.2rem;
-}
-.center-content img {
-    margin: 0 auto;
-}
-.cta-button {
-    background-color: #997D57;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    font-weight: normal;
+    margin-top: 5vh;
 }
 
-.center-question{
-    text-align: center;
-}
-.center-question h2{
-    font-weight: bolder;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-    .summary{
-        height:80vh;
-    }
-    .section-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .section-content img {
-        margin-bottom: 20px;
-        flex-basis: 100%;
-    }
-    .text-content {
-        flex-basis: 100%;
-        padding: 0;
-        margin-top: 20vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
-    }
-    .cta-button {
-        width: 100%;
-        padding: 15px 0;
-    }
-    .center-content h2{ 
-        font-size: 3rem;
-    }
-    .center-content p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header, footer {
-        padding: 15px 0;
-    }
-    .summary{
-        padding-top:10vh;
-        padding-bottom: 30vh;
-        vertical-align: sub;
-    }
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-    .text-content {
-        margin-top: 20vh;
-    }
-}
-
-
-/* *****共通設定***** */
-
-main{
-    display: block;
-    background-color: #EAF6FD;
-}
-main .btn{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    font-size: 1.5rem;
-}
-h1 { font-size: 4.5rem; }
-h2, h3{
-   color: #401f0f;
-}
-.gray {
-    color: #6c757d;
-}
-.card{
-    border-color: #e0c7b2;
-}
-.img-thumbnail {
-    width: 100%;
-    padding: .25rem;
-    background-color: transparent;
-    border: none;
-}
 
 /* ヘッダー(navbar) */
 .navbar{
