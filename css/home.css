@@ -34,145 +34,89 @@ main {
     font-weight: bold;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-    color: #C8E2E6;
-}
-
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus {
     color: #C8E2E6;
-    /* クリック後や訪問済みリンクの色を指定 */
 }
 
 /* 縦書きの著作権表示 */
 .vertical-text {
     position: fixed;
-    /* ページの固定位置に配置 */
     left: 1%;
-    /* 左端に配置 */
     top: 50%;
-    /* 上下の中央に配置 */
     transform: translateY(-50%);
-    /* 上下中央に揃える */
     writing-mode: vertical-rl;
-    /* 縦書きの方向を指定（右から左） */
     text-orientation: mixed;
-    /* テキストの向きを自動調整 */
     text-align: center;
-    /* テキストを中央に配置 */
     font-family: Arial, sans-serif;
-    /* フォントを指定 */
     font-size: 14px;
-    /* フォントサイズを指定 */
     color: #888;
-    /* テキストカラーを指定 */
     opacity: 0.7;
-    /* 透明度を少し設定 */
     z-index: 100;
-    /* ほかの要素の上に表示する */
     padding: 0;
-    /* 余白を削除して位置を調整 */
 }
 
 /* カルーセル */
-/* カルーセル全体のサイズと中央揃え */
 #carouselExampleAutoplaying {
     width: 90%;
-    /* 画面幅いっぱいに */
     max-height: 70vh;
-    /* 高さを現在の半分に設定 (50vh から 25vh) */
-    margin: 0 auto;
+    margin: 5vh auto 0;
     position: relative;
     overflow: hidden;
-    /* コンテナから画像がはみ出さないように */
-    margin-top: 5vh;
     border-radius: 15px;
-    /* 角を丸くする */
     background-color: transparent;
-    /* 背景色を透明に設定 */
 }
 
-/* カルーセル内の画像サイズを調整 */
 #carouselExampleAutoplaying .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 画像のアスペクト比を維持しながらコンテナをカバー */
     border-radius: inherit;
-    /* コンテナの角丸設定に従う */
 }
 
-/* すべての画像に重ねて表示するテキストのスタイル */
 .carousel-static-text {
     position: absolute;
-    /* カルーセル全体に対して絶対位置 */
     top: 70%;
-    /* 上から70%の位置 */
     left: 6%;
-    /* 左から10%の位置 */
     transform: translateX(-50%);
-    /* 中央揃え */
     background-color: rgba(255, 255, 255);
-    /* 背景を半透明に */
     padding: 10px 20px;
-    /* 内側の余白 */
     border-radius: 10px;
-    /* 角を丸くする */
     font-size: 3rem;
-    /* フォントサイズ */
     font-weight: bold;
-    /* フォントの太さ */
     color: #000;
-    /* テキストカラー */
     animation: fadeIn 2s ease-in-out forwards;
-    /* 一度だけフェードインアニメーション */
     z-index: 10;
-    /* テキストを前面に表示 */
 }
 
-/* 小さい画面（スマホなど）用のレスポンシブ調整 */
 @media (max-width: 768px) {
     #carouselExampleAutoplaying {
         width: 100%;
-        /* モバイル時に幅を100%に設定 */
         height: 50vh;
-        /* 高さを維持 */
         border-radius: 0;
-        /* モバイル時に角丸をなくす（オプション） */
         margin-top: 0;
-        /* トップのマージンを調整（オプション） */
     }
 
     #carouselExampleAutoplaying .carousel-item img {
         height: 50vh;
-        /* モバイル時の高さに合わせる */
     }
 
-    /* スライドテキストのスタイル調整 */
     .carousel-static-text {
         font-size: 1.2rem;
-        /* モバイル向けにフォントサイズを小さく */
-        font-weight: bold;
         top: 70%;
-        /* 上から70%の位置 */
         left: 5%;
-        /* 左から5%の位置 */
     }
 }
 
-/* フェードインアニメーションの定義 */
 @keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(20px);
-        /* 下からフェードイン */
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
-        /* 最終位置 */
     }
 }
 
@@ -199,10 +143,7 @@ main {
 
 #footer #footer-news ul {
     margin: 0;
-    padding: 0
-}
-
-#footer #footer-news ul {
+    padding: 0;
     list-style: none;
 }
 
@@ -223,26 +164,18 @@ main {
 
 /* *****vision***** */
 .vision-section {
-    padding: 5vh 0;
+    padding: 10vh 0;
     background-image: url('/img/home-3.png');
     background-size: cover;
-    /* 背景画像をカバーサイズに設定 */
     background-position: center;
-    /* 背景画像を中央に配置 */
     opacity: 0;
-    /* 初期状態で透明に */
     transform: translateY(30px);
-    /* 少し下に配置 */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    /* トランジションの設定 */
-
 }
 
 .vision-section.visible {
     opacity: 1;
-    /* 見えるようにする */
     transform: translateY(0);
-    /* 元の位置に移動 */
 }
 
 .vision-title {
@@ -259,12 +192,9 @@ main {
     font-size: 2rem;
 }
 
-/* 小さい画面（スマホなど）用のレスポンシブ調整 */
 @media (max-width: 768px) {
     .vision-title {
-        opacity: 0.6;
         font-size: 4rem;
-        color: #997D67;
     }
 
     .vision-subtitle {
@@ -281,41 +211,91 @@ main {
     margin: 0 auto;
     padding: 20px;
     text-align: left;
-    /* 全体のテキストを左寄せにする */
 }
 
-/* *****mission***** */
-.mission-section {
+/* *****business***** */
+.business-section {
+    padding: 10vh 0;
+    background-size: cover;
+    background-position: center;
     opacity: 0;
-    /* 初期状態で透明に */
     transform: translateY(30px);
-    /* 少し下に配置 */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    /* トランジションの設定 */
 }
 
-.mission-section.visible {
+.business-section.visible {
     opacity: 1;
-    /* 見えるようにする */
     transform: translateY(0);
-    /* 元の位置に移動 */
 }
 
-/* *****value***** */
-.value-section {
-    opacity: 0;
-    /* 初期状態で透明に */
-    transform: translateY(30px);
-    /* 少し下に配置 */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    /* トランジションの設定 */
+.business-title {
+    opacity: 0.8;
+    padding-bottom: 5vh;
+    font-size: 8rem;
+    color: #4A4A4A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.value-section.visible {
-    opacity: 1;
-    /* 見えるようにする */
+.business-subtitle {
+    padding: 10vh 0;
+    font-size: 2rem;
+    color: #4A4A4A;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    background-size: cover;
+    background-position: center;
+}
+.business-1{
+    background-image: url('/img/home-4.png');
+}
+.business-2{
+    background-image: url('/img/home-5.png');
+}
+.business-subtitle h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.business-subtitle p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .business-subtitle h3 {
+        font-size: 2rem;
+    }
+
+    .business-subtitle p {
+        font-size: 1rem;
+    }
+}
+
+/* *****btn-custom***** */
+.btn-custom {
+    background-color: transparent;
+    color: #997D67;
+    border: 2px solid #997D67;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    color: #7a5a4a;
+    border-color: #7a5a4a;
+    transform: translateY(-2px);
+}
+
+.btn-custom:active {
+    color: #5a3e2e;
+    border-color: #5a3e2e;
     transform: translateY(0);
-    /* 元の位置に移動 */
 }
 
 /* ***** NEWSセクション ***** */
