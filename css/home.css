@@ -80,7 +80,7 @@ main {
 #carouselExampleAutoplaying {
     width: 90%;
     /* 画面幅いっぱいに */
-    max-height: 50vh;
+    max-height: 70vh;
     /* 高さを現在の半分に設定 (50vh から 25vh) */
     margin: 0 auto;
     position: relative;
@@ -109,7 +109,7 @@ main {
     /* カルーセル全体に対して絶対位置 */
     top: 70%;
     /* 上から70%の位置 */
-    left: 10%;
+    left: 6%;
     /* 左から10%の位置 */
     transform: translateX(-50%);
     /* 中央揃え */
@@ -176,8 +176,6 @@ main {
     }
 }
 
-
-
 /* フッター */
 #footer {
     background-color: #C8E2E6;
@@ -223,56 +221,21 @@ main {
     width: 360px;
 }
 
-
-.section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: #997D67;
-    text-align: left;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.section-subtitle {
-    font-size: 1.8rem;
-    color: #997D67;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.section-text {
-    font-size: 1.2rem;
-    color: #555;
-    text-align: left;
-    line-height: 1.8;
-}
-
-.section-image {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.section-image:hover {
-    transform: scale(1.05);
-}
-
 /* *****vision***** */
 .vision-section {
+    padding: 5vh 0;
+    background-image: url('/img/home-3.png');
+    background-size: cover;
+    /* 背景画像をカバーサイズに設定 */
+    background-position: center;
+    /* 背景画像を中央に配置 */
     opacity: 0;
     /* 初期状態で透明に */
     transform: translateY(30px);
     /* 少し下に配置 */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     /* トランジションの設定 */
+
 }
 
 .vision-section.visible {
@@ -282,57 +245,43 @@ main {
     /* 元の位置に移動 */
 }
 
+.vision-title {
+    opacity: 0.6;
+    font-size: 9rem;
+    color: #997D67;
+}
+
+.vision-subtitle {
+    font-size: 4rem;
+}
+
+.vision-text {
+    font-size: 2rem;
+}
+
+/* 小さい画面（スマホなど）用のレスポンシブ調整 */
+@media (max-width: 768px) {
+    .vision-title {
+        opacity: 0.6;
+        font-size: 4rem;
+        color: #997D67;
+    }
+
+    .vision-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .vision-text {
+        font-size: 1rem;
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
     /* 全体のテキストを左寄せにする */
-}
-
-.vision-title {
-    font-size: 4rem;
-    color: #997D67;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: left;
-    /* タイトルを左寄せ */
-}
-
-.vision-subtitle {
-    font-size: 3rem;
-    color: #997D67;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: left;
-    /* サブタイトルを左寄せ */
-}
-
-.vision-description {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 40px;
-    text-align: left;
-    /* 説明文を左寄せ */
-}
-
-/* 画像のスタイル */
-.vision-image {
-    display: block;
-    margin: 20px auto;
-    width: 90%;
-    /* 画像の最大幅を調整 */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    /* ホバー時のアニメーション効果 */
-}
-
-.vision-image:hover {
-    transform: scale(1.05);
-    /* ホバー時に少し拡大 */
 }
 
 /* *****mission***** */
@@ -370,25 +319,6 @@ main {
 }
 
 /* ***** NEWSセクション ***** */
-.section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    color: #997D67;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.section-description {
-    font-size: 1.2rem;
-    color: #555;
-    text-align: center;
-    margin-bottom: 40px;
-}
 
 .news-item {
     transition: all 0.3s ease;
