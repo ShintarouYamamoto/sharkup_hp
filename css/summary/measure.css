@@ -2,67 +2,155 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #EAF6FD;
-    color: #333;
+    background-color: #fff;
+    color: #181818;
     margin: 0;
     padding: 0;
 }
 section {
     padding: 40px 20px;
-    background-color: #C8E2E6;
+    /* background-color: #ffffff; */
     margin-bottom: 20px;
 }
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.section-content h2{
-    color: #111;
-    font-size: 3.5rem;
-}
-.section-content {
-    justify-content:space-between;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.section-content img {
-    max-width: 47%;
-    height: auto;
-    flex-basis: 40%;
-}
-.text-content {
-    flex-basis: 47%;
+
+.head-content {
     padding: 0 20px;
+    color:#EAF6FD;
+
 }
-.reverse {
-    flex-direction: row-reverse;
-    width:98%;
+.head-content h1{
+    font-weight: bold;
+    font-size: clamp(44px, 5vw, 60px);
 }
 .summary{
-    background-image: url("../img/summary5.png");
+    background-image: url("../../img/summary5.png");
     background-repeat:no-repeat;
     background-size: cover;
-    padding-top:30vh;
-    padding-bottom: 30vh;
+    height:20vh;
 }
-.center-content {
-    text-align: center;
+
+/* ファーストビュー */
+.hero_top{
+    font-family: 'Noto Sans JP', sans-serif;
+    /* height: 45vh; */
+    margin:13vh auto 11vh auto;
+    background-image: url("../../img/summary6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.center-content h2{ 
-    font-size: 3.5rem;
+
+.hero_top h1{
+    font-size: clamp(28px, 4vw, 44px);
     font-weight: bold;
-    margin-bottom: 5%;
-    color:#EAF6FD;
 }
-.center-content p{
-    color:#EAF6FD;
-    font-size: 1.2rem;
+.hero_top p{
+    font-size: clamp(12px, 2vw, 28px);
+    font-weight: normal;
+    margin-top: 5vh;
 }
-.center-content img {
-    margin: 0 auto;
+.hero_top_flow {
+    margin-top: 15vh;
 }
+.hero_top_flow h2{
+    font-weight: bolder;
+    margin-bottom: 3vh;
+    font-size: 2rem;
+}
+
+
+.job {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.job h2 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 10vh;
+}
+
+.job p {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+
+
+
+/* 特徴セクション全体のスタイル */
+.features-section {
+    padding: 60px 0;
+    background-color: #EAF6FD; /* 淡いグレーの背景色 */
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.feature_title{
+    margin-bottom: 7vh;
+    font-weight: bolder;
+    font-size: clamp(24px, 3vw, 36px);
+}
+
+/* 各特徴のスタイル */
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1; /* ボックスを伸ばして高さを統一 */
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* アイコンのスタイル */
+.feature-icon {
+    font-size: 50px;
+    color: #007BFF; /* 青系の色を使用 */
+    margin-bottom: 20px;
+}
+
+/* 特徴タイトル */
+.feature-title {
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: bolder;
+    color: #333;
+    margin-bottom: 4vh;
+}
+.feature-title span{
+    color: #004aad;
+}
+
+
+/* 特徴の説明 */
+.feature-description {
+    font-size: clamp(16px, 2vw, 24px);
+    color: #666;
+}
+
+
+/* お問い合わせ */
+.question{
+    margin-top: 13vh;
+    margin-bottom: 10vh;
+}
+.text-content{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.text-content h2{
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+}
+
+.text-content p{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
 .cta-button {
     background-color: #997D57;
     color: white;
@@ -70,116 +158,30 @@ section {
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 10px;
-}
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+    margin-top: 2vh;
 }
 
-.center-question{
-    text-align: center;
-}
-.center-question h2{
-    font-weight: bolder;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 768px) {
-    .summary{
-        height:80vh;
-    }
-    .section-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .section-content img {
-        margin-bottom: 20px;
-        flex-basis: 100%;
-    }
-    .text-content {
-        flex-basis: 100%;
-        padding: 0;
-        margin-top: 20vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
-    }
-    .cta-button {
-        width: 100%;
-        padding: 15px 0;
-    }
-    .center-content h2{ 
-        font-size: 3rem;
-    }
-    .center-content p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header, footer {
-        padding: 15px 0;
-    }
-    .summary{
-        padding-top:10vh;
-        padding-bottom: 30vh;
-        vertical-align: sub;
-    }
-    .cta-button {
-        font-size: 1rem;
-        padding: 10px 0;
-    }
-    .text-content {
-        margin-top: 20vh;
-    }
-}
-
-
-/* *****共通設定***** */
-
-main{
-    display: block;
-    background-color: #EAF6FD;
-}
-main .btn{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    font-size: 1.5rem;
-}
-h1 { font-size: 4.5rem; }
-h2, h3{
-   color: #401f0f;
-}
-.gray {
-    color: #6c757d;
-}
-.card{
-    border-color: #e0c7b2;
-}
-.img-thumbnail {
-    width: 100%;
-    padding: .25rem;
-    background-color: transparent;
-    border: none;
-}
 
 /* ヘッダー(navbar) */
-.navbar{
+.navbar {
     border-bottom: 1px solid #EAF6FD;
     background-color: #EAF6FD;
 }
-.navbar .navbar-collapse{
+
+.navbar .navbar-collapse {
     flex-grow: 0;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-brand{
-    width: 5vw;
-    height:5vh;
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 100%;
 }
 

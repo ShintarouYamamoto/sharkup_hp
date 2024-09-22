@@ -21,10 +21,12 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
 <header>
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="img/logo-wt.png" alt="あなたのサイト名"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span> </button>
+            <a class="navbar-brand" href="../index.html"><img src="../img/rogo(仮).png" alt="あなたのサイト名"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
@@ -39,8 +41,8 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
 </header>
 
 <main>
-    <section class="summary">
-        <div class="container text-center head_continer d-flex align-items-center justify-content-center">
+    <div class="summary d-flex align-items-center justify-content-center">
+        <div class="container text-center head_continer">
             <!-- <img src="\img\summary2.png" alt="サービス概要"> -->
             <div class="row ">
                 <div class="col head-content">
@@ -48,23 +50,28 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class = "hero_top ">
+    <section class = "hero_top hero_top_text">
         <div class="container ">
-            <div class="row">
-                <div class="col">
+            <div class="row ">
+                <div class="col ">
                     <h1>意思決定をサポートするデータ分析ソリューション</h1>
                     <p >蓄積されたデータを徹底的に解析し、企業が直面する課題を解決するための有益なインサイトを提供します。膨大なデータを単なる数字ではなく、ビジネスの成長に結びつける価値ある情報に変換。顧客の行動パターンや市場のトレンドを把握し、売上拡大やコスト最適化、業務効率化など、ビジネス目標に直結する分析結果を提示します。</p>
                 </div>
             </div>
-            <div class="col hero_top_flow">
-                <h2>データ分析の主な流れ</h2>
-                <figure class="figure">
-                    <img src="../img/手法選定.png" class="figure-img img-fluid rounded " alt="データ分析流れ">
-                </figure>
-            </div>
+    </section>
 
+    <section class="hero_top_flow_container">
+        <div class="container ">
+            <div class="row ">
+                <div class="col hero_top_flow">
+                    <h2>データ分析の主な流れ</h2>
+                    <figure class="figure">
+                        <img src="../img/手法選定.png" class="figure-img img-fluid rounded " alt="データ分析流れ">
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -77,11 +84,11 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                 <div class="col-lg-4 col-md-6 mb-4 d-flex">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="bi bi-speedometer2"></i> <!-- Bootstrapのアイコン -->
+                            <i class="bi bi-speedometer2"><img src="../img/summary_feature1.png"></i> <!-- Bootstrapのアイコン -->
                         </div>
-                        <h3 class="feature-title">高速なパフォーマンス</h3>
+                        <h3 class="feature-title">高度な分析技術による<br><span>インサイト</span></h3>
                         <p class="feature-description">
-                            私たちのサービスは、高速で信頼性のあるパフォーマンスを提供し、効率的な業務運営をサポートします。
+                            最新のデータサイエンス技術を駆使し、ビジネスに有益なインサイトを提供。精度の高い分析で、競争力を高めます。
                         </p>
                     </div>
                 </div>
@@ -90,11 +97,11 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                 <div class="col-lg-4 col-md-6 mb-4 d-flex">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="bi bi-shield-lock"></i>
+                            <i class="bi bi-shield-lock"><img src="../img/summary_feature2.png"></i>
                         </div>
-                        <h3 class="feature-title">高いセキュリティ</h3>
+                        <h3 class="feature-title">データの<span>可視化</span>による<br>意思決定支援</h3>
                         <p class="feature-description">
-                            最新のセキュリティ技術を採用し、顧客のデータを安全に保護します。
+                            データを視覚的にわかりやすく整理し、迅速な意思決定を支援。グラフやダッシュボードで現状を把握できます。
                         </p>
                     </div>
                 </div>
@@ -103,11 +110,11 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                 <div class="col-lg-4 col-md-6 mb-4 d-flex">
                     <div class="feature-box">
                         <div class="feature-icon">
-                            <i class="bi bi-people"></i>
+                            <i class="bi bi-people"><img src="../img/summary_feature3.png"></i>
                         </div>
-                        <h3 class="feature-title">優れたカスタマーサポート</h3>
+                        <h3 class="feature-title"><span>カスタマイズ</span>可能な<br>分析レポート</h3>
                         <p class="feature-description">
-                            私たちは迅速で丁寧なカスタマーサポートを提供し、お客様の満足度を常に高く維持しています。
+                            企業に合わせた分析レポートを提供。特定の課題に応じたインサイトで、成長をサポートします。
                         </p>
                     </div>
                 </div>

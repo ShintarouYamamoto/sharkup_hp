@@ -13,9 +13,6 @@ section {
     margin-bottom: 20px;
 }
 
-.head_continer{
-    height: 100%;
-}
 .head-content {
     padding: 0 20px;
     color:#EAF6FD;
@@ -23,7 +20,7 @@ section {
 }
 .head-content h1{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(44px, 5vw, 60px);
 }
 .summary{
     background-image: url("../../img/summary5.png");
@@ -36,20 +33,26 @@ section {
 .hero_top{
     font-family: 'Noto Sans JP', sans-serif;
     /* height: 45vh; */
-    margin:13vh auto 11vh auto;
+    margin:13vh auto 5vh auto;
+    
 }
-
+.hero_top_text{
+    background-image: url("../../img/summary6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .hero_top h1{
-    font-size: 3rem;
+    font-size: clamp(28px, 4vw, 44px);
     font-weight: bold;
 }
 .hero_top p{
-    font-size: 1.2rem;
+    font-size: clamp(12px, 2vw, 28px);
     font-weight: normal;
     margin-top: 5vh;
 }
 .hero_top_flow {
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 .hero_top_flow h2{
     font-weight: bolder;
@@ -67,7 +70,7 @@ section {
 .feature_title{
     margin-bottom: 7vh;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: clamp(24px, 3vw, 36px);
 }
 
 /* 各特徴のスタイル */
@@ -95,15 +98,19 @@ section {
 
 /* 特徴タイトル */
 .feature-title {
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: bolder;
     color: #333;
     margin-bottom: 4vh;
 }
+.feature-title span{
+    color: #004aad;
+}
+
 
 /* 特徴の説明 */
 .feature-description {
-    font-size: 1.1rem;
+    font-size: clamp(16px, 2vw, 24px);
     color: #666;
 }
 
@@ -138,21 +145,25 @@ section {
 }
 
 /* ヘッダー(navbar) */
-.navbar{
+.navbar {
     border-bottom: 1px solid #EAF6FD;
     background-color: #EAF6FD;
 }
-.navbar .navbar-collapse{
+
+.navbar .navbar-collapse {
     flex-grow: 0;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-brand{
-    width: 5vw;
-    height:5vh;
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 100%;
 }
 

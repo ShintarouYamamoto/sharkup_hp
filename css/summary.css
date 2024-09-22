@@ -13,9 +13,6 @@ section {
     margin-bottom: 20px;
 }
 
-.head_continer{
-    height: 100%;
-}
 .head-content {
     padding: 0 20px;
     color:#EAF6FD;
@@ -23,7 +20,7 @@ section {
 }
 .head-content h1{
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(36px, 5vw, 60px);
 }
 .summary{
     background-image: url("../img/summary5.png");
@@ -37,14 +34,18 @@ section {
     font-family: 'Noto Sans JP', sans-serif;
     /* height: 45vh; */
     margin:13vh auto 11vh auto;
+    background-image: url("../img/summary6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero_top h1{
-    font-size: 3rem;
+    font-size: clamp(28px, 4vw, 48px);
     font-weight: bold;
 }
 .hero_top p{
-    font-size: 1.2rem;
+    font-size: clamp(16px, 2vw, 24px);
     font-weight: normal;
     margin-top: 5vh;
 }
@@ -67,7 +68,7 @@ section {
 .next-btn {
     display: inline-block;
     padding: 10px 30px;
-    background-color: #007BFF; /* 青系の背景色 */
+    background-color: #004aad; /* 青系の背景色 */
     color: white; /* 白いテキスト */
     font-size: 18px;
     font-weight: 500;
