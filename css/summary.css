@@ -13,6 +13,8 @@ section {
     margin-bottom: 20px;
 }
 
+
+
 .head-content {
     padding: 0 20px;
     color:#EAF6FD;
@@ -50,6 +52,49 @@ section {
     margin-top: 5vh;
 }
 
+.service-menu {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 5vh;
+}
+
+.service-menu a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: clamp(16px, 1vw, 24px);
+}
+
+.service-menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.service-menu a::before {
+    content: '▼';
+    margin-right: 8px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.service-menu a:hover::before {
+    color: white;
+}
+
+ /* スムーズなスクロール */
+ html {
+     scroll-behavior: smooth;
+ }
+
 /* メイン */
 .job{
     font-family: 'Noto Sans JP', sans-serif;
@@ -62,6 +107,10 @@ section {
 .job p{
     font-size: 1.1rem;
     font-weight: normal;
+}
+
+.job_logo{
+    /* height: 1vh; */
 }
 
 /* ボタンスタイル */
@@ -139,6 +188,9 @@ section {
         margin-top: 5vh;
     }
     /* メイン */
+    .job{
+        margin-bottom: 5vh;
+    }
     .job h2{
         margin-bottom: 5vh;
     }

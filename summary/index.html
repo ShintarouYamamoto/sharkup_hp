@@ -40,6 +40,7 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
 </header>
 
 <main>
+
     <div class="summary d-flex align-items-center justify-content-center">
         <div class="container text-center head_continer ">
             <!-- <img src="\img\summary2.png" alt="サービス概要"> -->
@@ -61,19 +62,24 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
             </div>
         </div>
     </section>
+    
+    <div class="service-menu">
+        <a href="#job1">データベース基盤構築</a>
+        <a href="#job2">データ分析</a>
+        <a href="#job3">施策提案</a>
+    </div>
 
 
-
-    <section class = "job content" data-aos="fade-up">
+    <section class = "job content" id="job1" data-aos="fade-up">
         <div class="container ">
             <div class="row align-items-center ">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-lg-6 ">
                     <figure class="figure">
                         <img src="\img\summary4.png" class="figure-img img-fluid rounded " alt="データ基盤構築">
                     </figure>
                 </div>
                 <div class="col-lg-6 col-12">
-                    <h2>データ基盤構築</h2>
+                    <h2>データベース基盤構築</h2>
                     <p>私たちのデータ基盤構築サービスでは、分散したデータを一元化し、効率的に管理・活用できる環境を提供します。これにより、必要なデータにすばやくアクセスでき、組織全体でデータを活用した意思決定が可能になります。拡張性の高いシステム設計で、ビジネスの成長やデータの増加にも柔軟に対応。信頼性の高いデータ基盤を整えることで、業務の効率化と確かなビジネス成果を支援します。</p>
                     <div class="container text-center mt-5">
                         <!-- 次のページへボタン -->
@@ -84,10 +90,15 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
         </div>
     </section>
 
-    <section class = "job content" data-aos="fade-up">
+    <section class = "job content" id="job2" data-aos="fade-up">
         <div class="container ">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-6 order-md-2">
+                    <figure class="figure">
+                        <img src="\img\summary3.png" class="figure-img img-fluid rounded" alt="データ分析">
+                    </figure>
+                </div>
+                <div class="col-lg-6 col-12 order-md-1">
                     <h2 >データ分析</h2>
                     <p >私たちのデータ分析サービスは、膨大なデータの中からビジネスに役立つ洞察を見つけ出します。高度な分析手法を駆使して、顧客行動や市場のトレンドを正確に把握し、データに基づく根拠のある意思決定をサポートします。これにより、売上の拡大やコスト削減、業務効率の向上といった具体的な成果が期待できます。さらに、リアルタイムでのデータ分析により、変化する市場環境にも柔軟に対応できる体制を整えます。</p>
                     <div class="container text-center mt-5">
@@ -95,19 +106,14 @@ integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUU
                         <a href="./dataanalytics.html" class="next-btn">さらに詳しく →</a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-none d-lg-block">
-                    <figure class="figure">
-                        <img src="\img\summary3.png" class="figure-img img-fluid rounded" alt="データ分析">
-                    </figure>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class = "job content" data-aos="fade-up">
+    <section class = "job content" id="job3" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-lg-6 ">
                     <figure class="figure">
                         <img src="\img\summary1.png" class="figure-img img-fluid rounded" alt="施策提案">
                     </figure>
@@ -212,6 +218,5 @@ crossorigin="anonymous"></script>
             easing: 'ease', // アニメーションのイージング
         });
 </script>
-
 </body>
 </html>

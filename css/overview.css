@@ -1,105 +1,87 @@
 @charset "utf-8";
 
 /* overview用 */
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fff;
+    color: #181818;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 10vh 0;
-}
-.company-info {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.company-info h2 {
-    text-align: center;
-}
-.company-info table {
-    width: 100%;
-    border-collapse: collapse;
-    height:60vh;
-}
-.company-info table, .company-info th, .company-info td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-.company-info th {
-    background-color: #f2f2f2;
-    color :#997D67;
-    font-size: 1.1rem;
-}
-.access-map {
-    text-align: center;
-    margin-top: 10vh;
-}
-.access-map iframe {
-    max-width: 100%;
-    height: 60vh;
-    margin-top: 5vh;
-    width:60vw; 
+section {
+    padding: 40px 20px;
+    /* background-color: #ffffff; */
+    margin-bottom: 20px;
 }
 
-.company-info td{
-    font-size: 1.1rem;
-
+.head-content {
+    padding: 0 20px;
+    color: #EAF6FD;
 }
 
-/* *****共通設定***** */
+.head-content h1 {
+    font-weight: bold;
+    font-size: clamp(44px, 5vw, 60px);
+}
+.head-content h4 {
+    font-weight: bolder;
+    font-size: clamp(36px, 4vw, 48px);
+}
 
-main{
-    display: block;
-    background-color: #EAF6FD;
+.summary {
+    background-image: url("../../img/summary5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
 }
-main .btn{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    font-size: 1.5rem;
+
+.infomation{
+    margin: 10vh auto;
 }
-h1 { font-size: 4.5rem; }
-h2, h3{
-   color: #997D67;
+
+.infomation h4{
+    margin-bottom: 5vh;
+    font-size: clamp(36px, 4vw, 48px);
+    font-weight: bolder;
 }
-.gray {
-    color: #6c757d;
+
+.company-info-table{
+    margin: 5vh auto;
 }
-.card{
-    border-color: #e0c7b2;
+
+.company-info-table strong{
+    font-size: clamp(24px, 2vw, 36px);
 }
-.img-thumbnail {
-    width: 100%;
-    padding: .25rem;
-    background-color: transparent;
-    border: none;
+
+.company-info-table td {
+    font-size: clamp(24px, 2vw, 36px);
 }
+.company-info-table p {
+    font-size: clamp(16px, 1.5vw, 32px);
+}
+
 
 /* ヘッダー(navbar) */
-.navbar{
+.navbar {
     border-bottom: 1px solid #EAF6FD;
     background-color: #EAF6FD;
 }
-.navbar .navbar-collapse{
+
+.navbar .navbar-collapse {
     flex-grow: 0;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-brand{
-    width: 5vw;
-    height:5vh;
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 100%;
 }
 
@@ -156,199 +138,5 @@ h2, h3{
 	width: 360px;
 }
 
-/* *****トップページ***** */
-/* メイン画像 */
-h1{
-    font-weight: bold !important;
-    color: #997D67;
-}
-#page-top h1 + span {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 110%;
-    margin-top: 0.2rem;
-    display: block;
-}
-#page-top .jumbotron-fluid{
-    height: 640px;
-    background-color: #f1efff;
-    border-bottom: #dddddd;
-    background: url("../img/top-main.jpg") no-repeat center center;
-    background-size:cover;
-}
-#page-top .jumbotron-fluid .container{
-    height: 100%;
-}
-#page-top .jumbotron-fluid .btn{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-top: 1.5rem;
-    font-weight: bold;
-	border-width: 3px;
-    border-color: #fff;
-}
 
-/* 各セクション */
-#page-top section{
-    border-bottom: 1px solid #e0c7b2;
-    background-color: #fbfbf2;
-	padding: 5rem 0;
-}
-#page-top section:nth-child(odd){
-    background-color: #e0c7b2;
-}
-#page-top section .container > h2{
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-}
-#page-top section .container > h2 + p{
-    max-width: 700px;
-	margin: 0 auto 50px;
-}
-#sec1 h3{
-    font-size: 1.4rem;
-}
-
-#sec2 {
-    line-height: 180%;
-}
-#sec2 .row{
-    min-height: 160px;
-    color: #2f2f2f;
-}
-#sec4 .card-body .clearfix p,
-#sec4 .card-body .clearfix h3{
-    margin-left: 115px;
-    line-height: 130%;
-}
-#sec4 .card-body .card-title{
-    margin-bottom: 5px;
-    color: #401f0f;
-}
-#sec4 .card-body .card-subtitle{
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    color: #968075;
-}
-#sec4 img {
-    width: 100%;
-}
-#sec4 .btn {
-    width: 100%;
-	background-color: #401f0f;
-	border: none;
-	padding: 1rem 0;
-}
-
-#sec5 article > .row {
-    border: 1px solid #dddddd;
-}
-#sec5 > div:nth-child(1) img {
-    width: 100%;
-}
-/*#sec4 > div:nth-child(2){
-    margin-left: 220px;
-}*/
-#sec5 h3{
-    margin-bottom: 0.1rem;
-}
-#sec5 article > div div header {
-	padding: 10px;
-}
-
-/* *****下層ページ***** */
-
-#breadcrumb-wrapper{
-    border-bottom: 1px solid #a29080;
-}
-#breadcrumb-wrapper,
-.breadcrumb{
-    font-size: 0.9rem;
-    background-color: #563322;
-}
-.breadcrumb a{
-    color: rgba(255,255,255,.5);
-}
-.breadcrumb a:hover,
-.breadcrumb a:focus{
-    color: rgba(255,255,255,1);
-}
-.breadcrumb-item+.breadcrumb-item::before{
-    content: ">";
-    padding-right: 1rem;
-    color: rgba(255,255,255,.5);
-}
-.breadcrumb-item.active{
-    color: #ffffff;
-}
-h1.page-ttl {
-    font-size:2rem; 
-}
-#page h1 + span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 110%;
-    margin-top: 0.2rem;
-    display: block;
-}
-
-#page article {
-    padding: 5rem 0;
-}
-
-#page section {
-    padding-bottom: 5rem;
-}
-#page section:last-child {
-    padding-bottom: 0rem;
-}
-
-#page h1 + small {
-    font-size: 1.5rem;
-    color: #ffffff;
-    line-height: 110%;
-    margin-top: 0.2rem;
-}
-#page .jumbotron{
-    background-color: #f1efff;
-    border-bottom: #dddddd;
-    background: url("../img/top-main.jpg") no-repeat center center;
-    background-size:cover;
-    border-radius: initial;
-}
-#page .jumbotron .container{
-    padding: 0;
-}
-#page .jumbotron .container p{
-    margin-bottom: 0;
-}
-#page h2 + p{
-    margin: 0 0 1.2rem;
-}
-#page main img{
-    max-width: 100%;
-}
-#page .sample-title{
-    display: flex;
-    align-items: center;
-    text-align: center;	
-}
-
-#page .sample-title::after {
-    border-top: 3px dotted;
-    content: "";
-    display: inline; /* for IE */
-    flex-grow: 1;
-    margin-left: 0.5em;
-}
-#page .sample-title span{
-    background-color: #fbfbf2;
-}
-#page .sample-subtitle{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #401f0f;
-}
 
