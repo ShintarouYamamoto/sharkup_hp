@@ -16,7 +16,7 @@ main {
     z-index: 1000;
     border-bottom: 1px solid #EAF6FD;
     background-color: white; /* 背景色を常に白に設定 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* スクロール時の影を追加 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を濃くする */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 15px; /* 角を丸くする */
     margin: 10px 0; /* 上下のマージンを追加 */

@@ -7,10 +7,35 @@ body {
     margin: 0;
     padding: 0;
 }
+
 section {
     padding: 40px 20px;
     /* background-color: #ffffff; */
     margin-bottom: 20px;
+}
+
+/* 縦書きの著作権表示 */
+.vertical-text {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.7;
+    z-index: 100;
+    padding: 0;
+}
+
+/* レスポンシブ時に非表示にする */
+@media (max-width: 768px) {
+    .vertical-text {
+        display: none;
+    }
 }
 
 .head-content {
@@ -48,13 +73,13 @@ section {
 
 
 
-.step_anal{
-    margin-top:10vh;
+.step_anal {
+    margin-top: 10vh;
     margin-bottom: 20vh;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-#anal_step_title{
+#anal_step_title {
     font-size: clamp(32px, 3vw, 44px);
     font-weight: bold;
     color: #004aad;
@@ -84,7 +109,7 @@ section {
 }
 
 .step-description {
-    font-size:clamp(16px, 1.5vw, 28px);
+    font-size: clamp(16px, 1.5vw, 28px);
     line-height: 1.6;
     margin-top: 10px;
 }
@@ -111,11 +136,11 @@ section {
     font-family: 'Noto Sans JP', sans-serif;
     height: 40vh;
     border-top: 1px solid #004aad;
-        /* 上に線を追加 */
+    /* 上に線を追加 */
     border-bottom: 1px solid #004aad;
-        /* 下に線を追加 */
+    /* 下に線を追加 */
     padding: 10px;
-        /* コンテンツと線の間に余白を作る */
+    /* コンテンツと線の間に余白を作る */
 }
 
 /* 小さい画面でのレスポンシブ対応 */
@@ -124,16 +149,18 @@ section {
         text-align: center;
         height: auto;
     }
+
     .step-circle {
         margin-bottom: 3vh;
     }
+
     .vertical-line {
         display: none;
     }
 
     .step-image {
         order: 3;
-        width:50%;
+        width: 50%;
         /* 画像を最後に表示 */
     }
 }
@@ -145,11 +172,12 @@ section {
 /* 特徴セクション全体のスタイル */
 .features-section {
     padding: 60px 0;
-    background-color: #EAF6FD; /* 淡いグレーの背景色 */
+    background-color: #EAF6FD;
+    /* 淡いグレーの背景色 */
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.feature_title{
+.feature_title {
     margin-bottom: 7vh;
     font-weight: bolder;
     font-size: clamp(24px, 3vw, 36px);
@@ -163,7 +191,8 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1; /* ボックスを伸ばして高さを統一 */
+    flex: 1;
+    /* ボックスを伸ばして高さを統一 */
 }
 
 .feature-box:hover {
@@ -174,7 +203,8 @@ section {
 /* アイコンのスタイル */
 .feature-icon {
     font-size: 50px;
-    color: #007BFF; /* 青系の色を使用 */
+    color: #007BFF;
+    /* 青系の色を使用 */
     margin-bottom: 20px;
 }
 
@@ -185,7 +215,8 @@ section {
     color: #333;
     margin-bottom: 4vh;
 }
-.feature-title span{
+
+.feature-title span {
     color: #004aad;
 }
 
@@ -198,20 +229,22 @@ section {
 
 
 /* お問い合わせ */
-.question{
+.question {
     margin-top: 13vh;
     margin-bottom: 10vh;
 }
-.text-content{
+
+.text-content {
     font-family: 'Noto Sans JP', sans-serif;
 }
-.text-content h2{
+
+.text-content h2 {
     font-size: 2.3rem;
     font-weight: bolder;
     margin-bottom: 3vh;
 }
 
-.text-content p{
+.text-content p {
     font-size: 1.1rem;
     font-weight: normal;
 }
@@ -228,8 +261,32 @@ section {
 
 /* ヘッダー(navbar) */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    /* 左側のマージンを追加 */
+    right: 10px;
+    /* 右側のマージンを追加 */
+    width: calc(100% - 20px);
+    /* 幅を調整 */
+    z-index: 1000;
     border-bottom: 1px solid #EAF6FD;
-    background-color: #EAF6FD;
+    background-color: white;
+    /* 背景色を常に白に設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影を濃くする */
+    /* スクロール時の影を追加 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    /* 角を丸くする */
+    margin: 10px 0;
+    /* 上下のマージンを追加 */
+}
+
+/* スクロール時の背景色変更を削除 */
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-collapse {
@@ -252,53 +309,59 @@ section {
 .navbar .navbar-nav .nav-link {
     color: black;
     font-weight: bold;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #C8E2E6;
+    font-size: 1.2rem;
+    /* フォントサイズを大きくする */
+    padding: 10px 20px;
+    /* パディングを調整 */
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus {
     color: #C8E2E6;
-    /* クリック後や訪問済みリンクの色を指定 */
 }
-
 
 /* フッター */
-#footer{
+#footer {
     background-color: #C8E2E6;
 }
-#footer .container{
+
+#footer .container {
     color: #000;
 }
-#footer .footer-ttl{
+
+#footer .footer-ttl {
     font-size: 1rem;
     font-weight: bold;
     margin: 1.5rem 0;
     color: #997D67;
 }
+
 #footer address p,
-#footer #footer-news li{
+#footer #footer-news li {
     margin-bottom: 0.5rem;
 }
-#footer #footer-news ul{
+
+#footer #footer-news ul {
     margin: 0;
     padding: 0
 }
-#footer #footer-news ul{
+
+#footer #footer-news ul {
     list-style: none;
 }
-#footer #footer-news li span{
+
+#footer #footer-news li span {
     display: inline-block;
     margin-right: 0.5rem;
 }
-#footer #copyright{
+
+#footer #copyright {
     border-top: 1px solid #997D67;
     background-color: #997D67;
     color: #e0c7b2;
 }
+
 #footer img {
-	width: 360px;
+    width: 360px;
 }

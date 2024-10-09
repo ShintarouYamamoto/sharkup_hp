@@ -7,43 +7,71 @@ body {
     margin: 0;
     padding: 0;
 }
+
 section {
     padding: 40px 20px;
     margin-bottom: 20px;
 }
 
-.head_continer{
+/* 縦書きの著作権表示 */
+.vertical-text {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.7;
+    z-index: 100;
+    padding: 0;
+}
+
+/* レスポンシブ時に非表示にする */
+@media (max-width: 768px) {
+    .vertical-text {
+        display: none;
+    }
+}
+
+.head_continer {
     height: 100%;
 }
+
 .head-content {
     padding: 0 20px;
-    color:#EAF6FD;
+    color: #EAF6FD;
     margin: 0 auto;
 }
-.head-content h1{
+
+.head-content h1 {
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-.summary{
+.summary {
     background-image: url("../../img/summary5.png");
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    height:20vh;
+    height: 20vh;
 }
 
 /* ファーストビュー */
-.hero_top{
+.hero_top {
     font-family: 'Noto Sans JP', sans-serif;
     /* height: 45vh; */
-    margin:13vh auto 11vh auto;
+    margin: 13vh auto 11vh auto;
 }
 
-.hero_top h1{
+.hero_top h1 {
     font-size: 3rem;
     font-weight: bold;
 }
-.hero_top p{
+
+.hero_top p {
     font-size: 1.2rem;
     font-weight: normal;
     margin-top: 5vh;
@@ -51,74 +79,108 @@ section {
 
 
 /* ヘッダー(navbar) */
-.navbar{
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    /* 左側のマージンを追加 */
+    right: 10px;
+    /* 右側のマージンを追加 */
+    width: calc(100% - 20px);
+    /* 幅を調整 */
+    z-index: 1000;
     border-bottom: 1px solid #EAF6FD;
-    background-color: #EAF6FD;
+    background-color: white;
+    /* 背景色を常に白に設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影を濃くする */
+    /* スクロール時の影を追加 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    /* 角を丸くする */
+    margin: 10px 0;
+    /* 上下のマージンを追加 */
 }
-.navbar .navbar-collapse{
+
+/* スクロール時の背景色変更を削除 */
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-collapse {
     flex-grow: 0;
 }
+
 .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar .navbar-brand{
-    width: 5vw;
-    height:5vh;
+
+.navbar .navbar-brand {
+    width: 10vw;
+    height: 10vh;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     height: 100%;
 }
 
 .navbar .navbar-nav .nav-link {
     color: black;
     font-weight: bold;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #C8E2E6;
+    font-size: 1.2rem;
+    /* フォントサイズを大きくする */
+    padding: 10px 20px;
+    /* パディングを調整 */
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus {
     color: #C8E2E6;
-    /* クリック後や訪問済みリンクの色を指定 */
 }
-
 
 /* フッター */
-#footer{
+#footer {
     background-color: #C8E2E6;
 }
-#footer .container{
+
+#footer .container {
     color: #000;
 }
-#footer .footer-ttl{
+
+#footer .footer-ttl {
     font-size: 1rem;
     font-weight: bold;
     margin: 1.5rem 0;
     color: #997D67;
 }
+
 #footer address p,
-#footer #footer-news li{
+#footer #footer-news li {
     margin-bottom: 0.5rem;
 }
-#footer #footer-news ul{
+
+#footer #footer-news ul {
     margin: 0;
     padding: 0
 }
-#footer #footer-news ul{
+
+#footer #footer-news ul {
     list-style: none;
 }
-#footer #footer-news li span{
+
+#footer #footer-news li span {
     display: inline-block;
     margin-right: 0.5rem;
 }
-#footer #copyright{
+
+#footer #copyright {
     border-top: 1px solid #997D67;
     background-color: #997D67;
     color: #e0c7b2;
 }
+
 #footer img {
-	width: 360px;
+    width: 360px;
 }
