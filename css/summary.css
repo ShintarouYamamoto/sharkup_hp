@@ -13,87 +13,51 @@ section {
     margin-bottom: 20px;
 }
 
+p {
+    line-height: 1.8;
+    /* 行間を広げる */
+    margin-bottom: 20px;
+    /* 段落の間隔を広げる */
+}
+
 
 
 .head-content {
     padding: 0 20px;
     color:#EAF6FD;
-
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .head-content h1{
     font-weight: bold;
-    font-size: clamp(36px, 5vw, 60px);
+    font-size: clamp(28px, 3.8vw, 48px);
+    margin-bottom: 5vh;
 }
 .summary{
-    background-image: url("../img/summary5.png");
+    background-image: url("../img/summary/summar_top.png");
     background-repeat:no-repeat;
     background-size: cover;
-    height:20vh;
+    height:80vh;
+    margin-bottom: 20vh;
 }
 
-/* ファーストビュー */
-.hero_top{
-    font-family: 'Noto Sans JP', sans-serif;
-    /* height: 45vh; */
-    margin:13vh auto 11vh auto;
-    background-image: url("../img/summary6.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-.hero_top h1{
-    font-size: clamp(28px, 4vw, 48px);
+.head-content h3{
+    font-size: clamp(36px, 4.5vw, 60px);
     font-weight: bold;
 }
-.hero_top p{
-    font-size: clamp(16px, 2vw, 24px);
+.head-content p{
+    font-size: clamp(12px, 1.5vw, 24px);
     font-weight: normal;
     margin-top: 5vh;
 }
 
-.service-menu {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bolder;
-    margin-bottom: 5vh;
-}
 
-.service-menu a {
-    margin: 0 15px;
-    padding: 10px 20px;
-    border: 1px solid #d3d3d3;
-    border-radius: 50px;
-    color: #333;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: clamp(16px, 1vw, 24px);
-}
-
-.service-menu a:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-.service-menu a::before {
-    content: '▼';
-    margin-right: 8px;
-    color: #007bff;
-    transition: color 0.3s ease;
-}
-
-.service-menu a:hover::before {
-    color: white;
-}
 
  /* スムーズなスクロール */
  html {
      scroll-behavior: smooth;
- }
+ } */
 
 /* メイン */
 .job{
@@ -103,19 +67,19 @@ section {
     font-size: 2.3rem;
     font-weight: bolder;
     margin-bottom: 10vh;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .job p{
     font-size: 1.1rem;
     font-weight: normal;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-.job_logo{
-    /* height: 1vh; */
-}
 
 /* ボタンスタイル */
 .next-btn {
     display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
     padding: 10px 30px;
     background-color: #004aad; /* 青系の背景色 */
     color: white; /* 白いテキスト */
@@ -144,6 +108,7 @@ section {
 .question{
     margin-top: 13vh;
     margin-bottom: 10vh;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .text-content{
     font-family: 'Noto Sans JP', sans-serif;
@@ -173,10 +138,6 @@ section {
 /*レスポンシブ*/
 @media screen and (max-width: 780px) {
     /* トップ */
-    .hero_top{
-        /* height: 40vh; */
-        /* margin:10vh auto 20vh auto; */
-    }
     
     .hero_top h1{
         font-size: 2rem;

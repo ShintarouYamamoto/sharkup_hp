@@ -23,7 +23,7 @@ section {
     font-size: clamp(44px, 5vw, 60px);
 }
 .summary{
-    background-image: url("../../img/summary5.png");
+    background-image: url("../../img/summary/summary5.png");
     background-repeat:no-repeat;
     background-size: cover;
     height:20vh;
@@ -34,7 +34,7 @@ section {
     font-family: 'Noto Sans JP', sans-serif;
     /* height: 45vh; */
     margin:13vh auto 11vh auto;
-    background-image: url("../img/summary6.png");
+    background-image: url("../img/summary/summary6.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
