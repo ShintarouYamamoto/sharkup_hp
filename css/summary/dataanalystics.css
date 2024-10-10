@@ -55,7 +55,7 @@ section {
     background-image: url("../../img/summary/summar_top.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 20vh;
 }
 
@@ -99,7 +99,7 @@ section {
     font-weight: bold;
     color: #004aad;
 
-    margin: 0 auto;
+    margin: 3vh auto 0;
 }
 
 .step-title {

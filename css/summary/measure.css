@@ -41,51 +41,34 @@ section {
 .head-content {
     padding: 0 20px;
     color: #EAF6FD;
-
+    height: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .head-content h1 {
     font-weight: bold;
-    font-size: clamp(44px, 5vw, 60px);
+    font-size: clamp(28px, 3.8vw, 48px);
+    margin-bottom: 5vh;
 }
 
 .summary {
-    background-image: url("../../img/summary/summary5.png");
+    background-image: url("../../img/summary/summar_top.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;
+    height: 100vh;
+    margin-bottom: 20vh;
 }
 
-/* ファーストビュー */
-.hero_top {
-    font-family: 'Noto Sans JP', sans-serif;
-    /* height: 45vh; */
-    margin: 13vh auto 11vh auto;
-    background-image: url("../img/summary/summary6.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-.hero_top h1 {
-    font-size: clamp(28px, 4vw, 44px);
+.head-content h3 {
+    font-size: clamp(36px, 4.5vw, 60px);
     font-weight: bold;
 }
 
-.hero_top p {
-    font-size: clamp(12px, 2vw, 28px);
+.head-content p {
+    font-size: clamp(12px, 1.5vw, 24px);
     font-weight: normal;
     margin-top: 5vh;
-}
-
-.hero_top_flow {
-    margin-top: 15vh;
-}
-
-.hero_top_flow h2 {
-    font-weight: bolder;
-    margin-bottom: 3vh;
-    font-size: 2rem;
 }
 
 

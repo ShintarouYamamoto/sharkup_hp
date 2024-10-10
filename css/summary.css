@@ -59,7 +59,7 @@ p {
     background-image: url("../img/summary/summar_top.png");
     background-repeat:no-repeat;
     background-size: cover;
-    height:80vh;
+    height:100vh;
     margin-bottom: 20vh;
 }
 
@@ -86,7 +86,7 @@ p {
     font-family: 'Noto Sans JP', sans-serif;
 }
 .job h2{
-    font-size: 2.3rem;
+    font-size: clamp(36px, 3vw, 48px);
     font-weight: bolder;
     margin-bottom: 10vh;
     font-family: 'Noto Sans JP', sans-serif;
@@ -96,6 +96,7 @@ p {
     font-weight: normal;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 
 
 /* ボタンスタイル */
@@ -177,6 +178,8 @@ p {
     .job h2{
         margin-bottom: 5vh;
     }
+
+
 }
 
 /* ヘッダー(navbar) */
