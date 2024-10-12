@@ -149,28 +149,34 @@ main {
 
 /* フッター */
 #footer {
-    background-color: #C8E2E6;
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-color: #001f3f;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-#footer .container {
+/* #footer .container{
     color: #000;
-}
-
+} */
 #footer .footer-ttl {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 1.5rem 0;
-    color: #997D67;
+    color: #ccc;
 }
 
 #footer address p,
 #footer #footer-news li {
     margin-bottom: 0.5rem;
+    color: #ccc;
+    outline: none;
 }
 
 #footer #footer-news ul {
     margin: 0;
     padding: 0;
+}
+
+#footer #footer-news ul {
     list-style: none;
 }
 
@@ -180,14 +186,72 @@ main {
 }
 
 #footer #copyright {
-    border-top: 1px solid #997D67;
-    background-color: #997D67;
-    color: #e0c7b2;
+    color: #ccc;
 }
 
 #footer img {
     width: 360px;
 }
+
+.footer_text p {
+    color: #ccc;
+}
+@media screen and (min-width: 1200px) {
+
+    #footer #footer-contents>div {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-collaps: collapse;
+    }
+
+    #footer #footer-contents>div:last-child {
+        border-right: 1px solid #ccc;
+    }
+
+    #footer img {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:991.98px) {
+    #footer #footer-contents>div {
+        border-bottom: 1px solid #ccc;
+        border-left: none;
+        border-right: none;
+        padding-bottom: 1rem;
+    }
+
+    #footer img {
+        width: 100%;
+        max-width: 748px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    #footer #footer-contents>div:first-child {
+            border-right: none !important;
+        }
+    
+        #footer .container {
+            padding-top: 0px;
+        }
+    
+        #footer .container .row {
+            margin-bottom: 0;
+        }
+    
+        #footer #copyright {
+            font-size: 0.8rem;
+        }
+    
+        #footer h2 {
+            margin: 2rem 0;
+        }
+}
+
 
 /* ***** NEWSセクション ***** */
 

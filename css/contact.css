@@ -177,3 +177,53 @@ body {
 .contact-form button:focus {
     outline: none;
 }
+
+/* フッター */
+#footer {
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-color: #001f3f;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* #footer .container{
+    color: #000;
+} */
+#footer .footer-ttl {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #ccc;
+}
+
+#footer address p,
+#footer #footer-news li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    outline: none;
+}
+
+#footer #footer-news ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer #footer-news ul {
+    list-style: none;
+}
+
+#footer #footer-news li span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#footer #copyright {
+    color: #ccc;
+}
+
+#footer img {
+    width: 360px;
+}
+
+.footer_text p {
+    color: #ccc;
+}

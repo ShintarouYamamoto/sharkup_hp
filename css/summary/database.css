@@ -142,28 +142,31 @@ section {
 
 /* フッター */
 #footer {
-    background-color: #C8E2E6;
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-color: #001f3f;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-#footer .container {
+/* #footer .container{
     color: #000;
-}
-
+} */
 #footer .footer-ttl {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 1.5rem 0;
-    color: #997D67;
+    color: #ccc;
 }
 
 #footer address p,
 #footer #footer-news li {
     margin-bottom: 0.5rem;
+    color: #ccc;
+    outline: none;
 }
 
 #footer #footer-news ul {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 #footer #footer-news ul {
@@ -176,11 +179,13 @@ section {
 }
 
 #footer #copyright {
-    border-top: 1px solid #997D67;
-    background-color: #997D67;
-    color: #e0c7b2;
+    color: #ccc;
 }
 
 #footer img {
     width: 360px;
+}
+
+.footer_text p {
+    color: #ccc;
 }
