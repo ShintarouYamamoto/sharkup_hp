@@ -68,63 +68,119 @@ body {
 .navbar .navbar-nav .nav-link:focus {
     color: #C8E2E6;
 }
+
 section {
     padding: 40px 20px;
     /* background-color: #ffffff; */
     margin-bottom: 20px;
 }
 
-.head-content {
-    padding: 0 20px;
-    color: #EAF6FD;
+
+
+.company_section{
+    padding-top: 8vh;
+    margin-bottom: 15vh;
+    line-height: 1.6;
 }
 
-.head-content h1 {
+
+.outline-title {
+    margin-bottom: 8vh;
+}
+
+.outline-title h2{
     font-weight: bold;
-    font-size: clamp(44px, 5vw, 60px);
+    font-size: clamp(24px, 3vw, 60px);
+    color: #004aad;
 }
-.head-content h4 {
+
+.outline-title h4 {
+    font-size: clamp(20px, 2vw, 48px);
     font-weight: bolder;
-    font-size: clamp(36px, 4vw, 48px);
+    color: #004aad;
 }
 
-.summary {
-    background-image: url("../../img/summary5.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20vh;
+.map-container {
+    text-align: center;
+    margin-bottom: 10vh;
 }
 
-.infomation{
-    margin: 10vh auto;
+.section-bg {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    overflow: hidden;
 }
 
-.infomation h4{
-    margin-bottom: 5vh;
-    font-size: clamp(36px, 4vw, 48px);
-    font-weight: bolder;
+.card-title{
+    color:#004aad;
+    font-size: clamp(20px, 2vw, 48px);
 }
 
-.company-info-table{
-    margin: 5vh auto;
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    /* min-height: 20vh; */
 }
 
-.company-info-table strong{
-    font-size: clamp(24px, 2vw, 36px);
+.card:hover {
+    transform: translateY(-10px);
 }
 
-.company-info-table td {
-    font-size: clamp(24px, 2vw, 36px);
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 内容を均等に配置 */
 }
-.company-info-table p {
+
+.card-text{
     font-size: clamp(16px, 1.5vw, 32px);
 }
 
+.map-container iframe {
+    width: 100%;
+    /* デフォルトは100% */
+    height: 450px;
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .map-container iframe {
+        width: 60%;
+        /* 画面幅が768px以上の場合は60% */
+    }
+}
 
 /* ヘッダー(navbar) */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    /* 左側のマージンを追加 */
+    right: 10px;
+    /* 右側のマージンを追加 */
+    width: calc(100% - 20px);
+    /* 幅を調整 */
+    z-index: 1000;
     border-bottom: 1px solid #EAF6FD;
-    background-color: #EAF6FD;
+    background-color: white;
+    /* 背景色を常に白に設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影を濃くする */
+    /* スクロール時の影を追加 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    /* 角を丸くする */
+    margin: 10px 0;
+    /* 上下のマージンを追加 */
+}
+
+/* スクロール時の背景色変更を削除 */
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-collapse {
@@ -147,17 +203,39 @@ section {
 .navbar .navbar-nav .nav-link {
     color: black;
     font-weight: bold;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #C8E2E6;
+    font-size: 1.2rem;
+    /* フォントサイズを大きくする */
+    padding: 10px 20px;
+    /* パディングを調整 */
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:active,
 .navbar .navbar-nav .nav-link:focus {
     color: #C8E2E6;
-    /* クリック後や訪問済みリンクの色を指定 */
+}
+/* 縦書きの著作権表示 */
+.vertical-text {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.7;
+    z-index: 100;
+    padding: 0;
+}
+
+/* レスポンシブ時に非表示にする */
+@media (max-width: 768px) {
+    .vertical-text {
+        display: none;
+    }
 }
 
 /* フッター */

@@ -206,7 +206,7 @@ section {
 /* アイコンのスタイル */
 .feature-icon {
     font-size: 50px;
-    color: #007BFF;
+    /* color: #007BFF; */
     /* 青系の色を使用 */
     margin-bottom: 20px;
 }
@@ -228,6 +228,100 @@ section {
 .feature-description {
     font-size: clamp(16px, 2vw, 24px);
     color: #666;
+}
+
+
+
+
+.business-section {
+    /* background-color: #6c6c6c; */
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 背景色を設定 */
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.business-section h2 {
+    color: #004aad;
+    font-weight: bold;
+    font-size: clamp(30px, 4.5vw, 60px);
+    margin-bottom: 2rem;
+}
+
+
+.business-link-item {
+    text-align: center;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.business-link-item a {
+    position: relative;
+    display: inline-block;
+    color: #555;
+    font-size: clamp(16px, 2.3vw, 32px);
+    font-weight: bold;
+    text-decoration: none;
+    /* カスタムアンダーラインを使うために標準のアンダーラインは消す */
+    overflow: hidden;
+}
+
+/* アンダーラインのスタイル */
+.business-link-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #181818;
+    /* 初期のアンダーラインの色 */
+    transform: scaleX(0);
+    /* アンダーラインを最初は隠す */
+    transform-origin: left;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    /* アニメーション */
+}
+
+/* ホバー時にアンダーラインと文字の色が左から右に変わる */
+.business-link-item a:hover::before {
+    transform: scaleX(1);
+    /* アンダーラインを表示 */
+    background-color: #004aad;
+    /* アンダーラインの色を変更 */
+}
+
+.business-link-item a:hover {
+    color: #004aad;
+    /* 文字色もホバー時に変更 */
+    transition: color 0.4s ease;
+    /* 文字色が変わるアニメーション */
+}
+.business-link-item a:hover::after {
+    color: #004aad;
+    /* 文字色もホバー時に変更 */
+    transition: color 0.4s ease;
+    /* 文字色が変わるアニメーション */
+}
+
+/* 矢印のスタイル */
+.business-link-item a::after {
+    content: '\2192';
+    /* 矢印の文字コード */
+    color: #181818;
+    margin-left: 10px;
+    font-size: clamp(8px, 1.8vw, 32px);
+    vertical-align: middle;
+}
+
+/* 小さい画面でのレスポンシブ対応 */
+@media (max-width: 768px) {
+    .business-link-item {
+            text-align: left;
+            padding-left: 1.5rem;/* 左右に余白を加える */
+            padding-right: 1.5rem;
+        }
+
 }
 
 

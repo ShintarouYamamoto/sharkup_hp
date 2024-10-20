@@ -96,7 +96,13 @@ p {
     font-weight: normal;
     font-family: 'Noto Sans JP', sans-serif;
 }
-
+.job_contents{
+    display: flex;
+    align-items: stretch;
+}
+.job_text{
+    flex: 1;
+}
 
 
 /* ボタンスタイル */
