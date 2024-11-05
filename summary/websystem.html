@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
@@ -6,36 +6,29 @@
     <title>ページ名 | サイト名</title>
     <meta name="description" content="サイトの説明文">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- OGP設定 -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="あなたのサイトURL" />
-    <meta property="og:image" content="SNSで表示させたい画像のパス" />
-    <meta property="og:title" content="ページタイトル" />
-    <meta property="og:description" content="サイトの説明文" />
     <!-- スタイルシートはここから -->
-    <link rel="stylesheet" href="../css/summary/websystem.css">
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/queries.css">
+    <link rel="stylesheet" href="../css/summary/websystem.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="page">
     <!------------------------------------------------------------------------------------------------------------------>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><img src="../img/rogo(仮).png" alt="あなたのサイト名"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="../index.html" class="nav-link">ホーム</a></li>
@@ -47,7 +40,7 @@
             </div>
         </nav>
     </header>
-    <!------------------------------------------------------------------------------------------------------------------>
+
     <main>
         <div class="vertical-text">
             © SHARKUP INC.
@@ -58,24 +51,100 @@
                 <!-- <img src="\img\summary2.png" alt="サービス概要"> -->
                 <div class="row">
                     <div class="col head-content">
-                        <h1 class="text-start">データ分析</h1>
-                        <h3 class="text-start">意思決定をサポートするソリューション </h3>
+                        <h1 class="text-start">WEBシステム・アプリ開発</h1>
+                        <h3 class="text-start">お客様の要求を満たすシステムを開発</h3>
                         <p class="text-start">
-                            蓄積されたデータを徹底的に解析し、企業が直面する課題を解決するための有益なインサイトを提供します。顧客の行動パターンや市場のトレンドを把握し、売上拡大やコスト最適化、業務効率化など、ビジネス目標に直結する分析結果を提示します。
+                            お客様の要求に応じたシステムを開発し、ビジネス課題の解決を支援します。詳細なヒアリングを通じて要件を正確に把握し、最適なソリューションを設計・提案します。設計から実装、テスト、導入まで一貫したサービスを提供し、効率的で使いやすいシステムの構築を目指します。お客様のビジョンに寄り添い、柔軟かつ丁寧な対応で、事業の成長をサポートします。
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="qa-section"></div>
+
+        <div class="qa-section"></div>
+
+        <div class="business-section">
+            <div class="container">
+                <h2>Service List</h2>
+                <div class="row ">
+                    <div class="col-md-4 col-12 business-link-item">
+                        <a href="./database.html">データベース基盤構築</a>
+                    </div>
+                    <div class="col-md-4 col-12 business-link-item">
+                        <a href="./dataanalytics.html">データ分析</a>
+                    </div>
+                    <div class="col-md-4 col-12 business-link-item">
+                        <a href="./measure.html">施策提案・効果検証</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    </footer>
-    <!------------------------------------------------------------------------------------------------------------------>
-    <!-- javascript はここから -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="js/home.js"></script>
+    <footer id="footer">
+        <div class="container py-5">
+            <div id="footer-contents" class="row mb-5">
+                <div class="col-lg-6 col-xl-8">
+                    <address class="col-lg-10 offset-lg-1 mb-0">
+                        <p class="footer-ttl">会社概要</p>
+                        <p>合同会社 SharkUp</p>
+                        <p>東京都渋谷区神泉町１０番１５号アネックス神泉３０１</p>
+                        <p>Tel: **-****-****</p>
+                        <p>Email: *******@*******.com</p>
+                        <p></p>
+                    </address>
+                </div>
+                <div id="footer-news" class="col-lg-6 col-xl-4">
+                    <div class="col-lg-10 offset-lg-1">
+                        <p class="footer-ttl">NEWS</p>
+                        <ul>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                            <li><span>2018.07.06</span>ページ更新しました。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <!-- <div id="footer-banner" class="container">
+                <div class="row">
+                    <div class="text-center col-md-4 mb-2">
+                        <a href="#" class="d-inline-block">
+                            <img src="../img/banner1.jpg" alt="バナー1">
+                        </a>
+                    </div>
+                    <div class="text-center col-md-4 mb-2">
+                        <a href="#" class="d-inline-block">
+                            <img src="../img/banner2.jpg" alt="バナー2">
+                        </a>
+                    </div>
+                    <div class="text-center col-md-4 mb-2">
+                        <a href="#" class="d-inline-block">
+                            <img src="../img/banner3.jpg" alt="バナー3">
+                        </a>
+                    </div>
+                </div><! /.row
+            </div> -->
+        </div><!-- .container -->
+        <div id="copyright">
+            <p class="text-center mb-0 pt-3 pb-3">&copy;&ensp;SharkUp All Rights Reserved.</p>
+        </div><!-- .container-fluid -->
+        <!------------------------------------------------------------------------------------------------------------------>
+        <!-- javascript はここから -->
+
+        <script type="text/javascript">
+            let submitted = false;
+        </script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+            onload="if(submitted){window.location='index.html';}"></iframe>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
