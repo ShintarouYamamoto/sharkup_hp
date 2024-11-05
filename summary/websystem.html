@@ -6,19 +6,18 @@
     <title>ページ名 | サイト名</title>
     <meta name="description" content="サイトの説明文">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- スタイルシートはここから -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/queries.css">
     <link rel="stylesheet" href="../css/summary/websystem.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/custom-style.css"> <!-- カスタムスタイルのCSSリンク -->
 </head>
 
 <body id="page">
-    <!------------------------------------------------------------------------------------------------------------------>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
@@ -46,9 +45,8 @@
             © SHARKUP INC.
         </div>
 
-        <div class="summary d-flex align-items-center ">
-            <div class="container head_continer ">
-                <!-- <img src="\img\summary2.png" alt="サービス概要"> -->
+        <div class="summary d-flex align-items-center">
+            <div class="container head_container">
                 <div class="row">
                     <div class="col head-content">
                         <h1 class="text-start">WEBシステム・アプリ開発</h1>
@@ -61,90 +59,125 @@
             </div>
         </div>
 
-        <div class="qa-section"></div>
-
-        <div class="qa-section"></div>
-
-        <div class="business-section">
+        <section class="troubles-section">
             <div class="container">
-                <h2>Service List</h2>
-                <div class="row ">
-                    <div class="col-md-4 col-12 business-link-item">
-                        <a href="./database.html">データベース基盤構築</a>
+                <h2 class="text-center">こんなお悩みありませんか</h2>
+                <ul class="troubles-list">
+                    <li>業務効率を高めるために、システム導入を検討したい。</li>
+                    <li>システム開発など、技術全般について幅広く相談したい。</li>
+                    <li>現在の開発会社の品質に不満があり、優れた開発会社を探している。</li>
+                    <li>既存の開発会社が積極的に対応してくれず、進行が遅い。</li>
+                    <li>修正に多くの時間がかかり、もっとスピード感が欲しい。</li>
+                </ul>
+                <h3 class="text-center mt-4">お客様の欲しいシステムはShakeUpにお任せください</h3>
+
+                <ul class="custom-list">
+                    <li>多種多様な開発実績とノウハウを惜しみなく提供</li>
+                    <li>業務課題のMECE（抜け漏れ）を見逃さない「現場調査力」</li>
+                    <li>ボトルネックにある問題を解消する「提案型課題解決力」</li>
+                    <li>運用開始後の改修しやすさに大きな影響を与える刻品質な「設計力」</li>
+                    <li>お客様の無理難題を叶え3倍速開発の対応「開発力」</li>
+                </ul>
+
+                <!-- カードセクションの追加 -->
+                <div class="card-section">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i> <!-- 企画のアイコン -->
+                        </div>
+                        <h3>企画</h3>
+                        <p>お客様のビジョンを形にするための企画を行います。</p>
                     </div>
-                    <div class="col-md-4 col-12 business-link-item">
-                        <a href="./dataanalytics.html">データ分析</a>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-pencil-ruler"></i> <!-- 設計のアイコン -->
+                        </div>
+                        <h3>設計</h3>
+                        <p>システムの設計を通じて、最適なソリューションを提供します。</p>
                     </div>
-                    <div class="col-md-4 col-12 business-link-item">
-                        <a href="./measure.html">施策提案・効果検証</a>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i> <!-- 開発のアイコン -->
+                        </div>
+                        <h3>開発</h3>
+                        <p>高品質なシステム開発を行い、ビジネスの成長を支援します。</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i> <!-- 運用保守のアイコン -->
+                        </div>
+                        <h3>運用保守</h3>
+                        <p>システムの運用と保守を通じて、安定したサービスを提供します。</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="qa-section">
+            <div class="container">
+                <h2 class="text-center">Q&A</h2>
+                <div class="qa-item">
+                    <div class="qa-question">
+                        Q1: システム導入の流れはどうなっていますか？
+                        <div class="qa-answer">
+                            <p>システム導入の流れは、ヒアリング、設計、開発、テスト、導入の順に進めます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="qa-question">
+                        Q2: 開発期間はどのくらいですか？
+                        <div class="qa-answer">
+                            <p>発期間はプロジェクトの規模によりますが、通常は3ヶ月から6ヶ月です。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="qa-question">
+                        Q3: サポート体制はどうなっていますか？
+                        <div class="qa-answer">
+                            <p>導入後もサポートチームが24時間体制で対応いたします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer id="footer">
         <div class="container py-5">
-            <div id="footer-contents" class="row mb-5">
-                <div class="col-lg-6 col-xl-8">
-                    <address class="col-lg-10 offset-lg-1 mb-0">
-                        <p class="footer-ttl">会社概要</p>
-                        <p>合同会社 SharkUp</p>
-                        <p>東京都渋谷区神泉町１０番１５号アネックス神泉３０１</p>
-                        <p>Tel: **-****-****</p>
-                        <p>Email: *******@*******.com</p>
-                        <p></p>
-                    </address>
-                </div>
-                <div id="footer-news" class="col-lg-6 col-xl-4">
-                    <div class="col-lg-10 offset-lg-1">
-                        <p class="footer-ttl">NEWS</p>
-                        <ul>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                            <li><span>2018.07.06</span>ページ更新しました。</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- .row -->
-            <!-- <div id="footer-banner" class="container">
-                <div class="row">
-                    <div class="text-center col-md-4 mb-2">
-                        <a href="#" class="d-inline-block">
-                            <img src="../img/banner1.jpg" alt="バナー1">
-                        </a>
-                    </div>
-                    <div class="text-center col-md-4 mb-2">
-                        <a href="#" class="d-inline-block">
-                            <img src="../img/banner2.jpg" alt="バナー2">
-                        </a>
-                    </div>
-                    <div class="text-center col-md-4 mb-2">
-                        <a href="#" class="d-inline-block">
-                            <img src="../img/banner3.jpg" alt="バナー3">
-                        </a>
-                    </div>
-                </div><! /.row
-            </div> -->
-        </div><!-- .container -->
-        <div id="copyright">
-            <p class="text-center mb-0 pt-3 pb-3">&copy;&ensp;SharkUp All Rights Reserved.</p>
-        </div><!-- .container-fluid -->
-        <!------------------------------------------------------------------------------------------------------------------>
-        <!-- javascript はここから -->
+            <!-- footer contents here -->
+        </div>
+    </footer>
 
-        <script type="text/javascript">
-            let submitted = false;
-        </script>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-            onload="if(submitted){window.location='index.html';}"></iframe>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.qa-question');
+
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const answer = this.querySelector('.qa-answer');
+                    const isOpen = answer.classList.contains('open');
+
+                    // Close all answers
+                    document.querySelectorAll('.qa-answer').forEach(ans => {
+                        ans.classList.remove('open');
+                        ans.style.maxHeight = null;
+                    });
+
+                    // Toggle the clicked answer
+                    if (!isOpen) {
+                        answer.classList.add('open');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

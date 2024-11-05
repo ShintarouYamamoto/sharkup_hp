@@ -132,7 +132,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    margin-bottom: 20vh;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 
@@ -210,7 +211,7 @@ main {
 
 .business-link-item a:hover {
     color: #004aad;
-    /* 文字色もホバー時に変更 */
+    /* 文字色もホバー時に更 */
     transition: color 0.4s ease;
     /* 文字色が変わるアニメーション */
 }
@@ -347,4 +348,275 @@ main {
     #footer h2 {
         margin: 2rem 0;
     }
+}
+
+.troubles-section {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c0c7ff 100%);
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.troubles-section h2,
+.qa-section h2 {
+    font-family: 'SUSE', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1a3e5c; /* 画像の色合いに合わせる */
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-transform: none; /* 大文字変換を解除 */
+    letter-spacing: normal; /* 文字間隔を通常に */
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* 短い下線を削除 */
+.troubles-section h2::after,
+.qa-section h2::after {
+    content: none;
+}
+
+.troubles-list {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.troubles-list li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.troubles-list li:hover {
+    background-color: #e9ecef;
+    transform: translateY(-5px);
+}
+
+.troubles-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: #004aad;
+}
+
+.troubles-section p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .troubles-section {
+        padding: 30px 20px; /* パディングを調整 */
+    }
+
+    .troubles-section h2 {
+        font-size: 2.5rem; /* フォントサイズを調整 */
+    }
+
+    .troubles-list li {
+        font-size: 1.2rem; /* フォントサイズを調整 */
+    }
+
+    .troubles-section p {
+        font-size: 1.1rem; /* フォントサイズを調整 */
+    }
+}
+
+@media (max-width: 480px) {
+    .troubles-section {
+        padding: 20px 15px; /* パディングをさらに調整 */
+    }
+
+    .troubles-section h2 {
+        font-size: 2rem; /* フォントサイズをさらに調整 */
+    }
+
+    .troubles-list li {
+        font-size: 1rem; /* フォントサイズをさらに調整 */
+    }
+
+    .troubles-section p {
+        font-size: 1rem; /* フォントサイズをさらに調整 */
+    }
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* 枠線を消す */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    font-size: 4rem; /* アイコンのサイズを大きく */
+    color: #004aad;
+    margin-bottom: 20px; /* 余白を調整 */
+}
+
+.card h3 {
+    font-size: 2rem; /* 見出しのフォントサイズを大きく */
+    font-weight: bold;
+    margin-bottom: 15px; /* 余白を調整 */
+}
+
+.card p {
+    font-size: 1.2rem; /* テキストのフォントサイズを大きく */
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.qa-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qa-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.qa-question:hover {
+    background-color: #e0e0e0;
+}
+
+.qa-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0;
+    background-color: inherit;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.qa-answer.open {
+    max-height: 200px;
+    padding: 15px;
+    color: #333;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .qa-question {
+        font-size: 1rem; /* フォントサイズを少し小さく */
+        padding: 10px; /* パディングを調整 */
+    }
+
+    .qa-answer {
+        font-size: 0.9rem; /* フォントサイズを少し小さく */
+    }
+}
+
+@media (max-width: 480px) {
+    .qa-question {
+        font-size: 0.9rem; /* フォントサイズをさらに小さく */
+        padding: 8px; /* パディングをさらに調整 */
+    }
+
+    .qa-answer {
+        font-size: 0.8rem; /* フォントサイズをさらに小さく */
+    }
+}
+
+.text-center {
+    font-size: 1.5rem; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字にする */
+    color: #333; /* テキストカラーを調整 */
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    counter-reset: item;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    counter-increment: item;
+}
+
+.custom-list li:hover {
+    transform: translateY(-5px);
+}
+
+.custom-list li::before {
+    content: counter(item) ".";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004aad;
+    margin-right: 10px;
 }
