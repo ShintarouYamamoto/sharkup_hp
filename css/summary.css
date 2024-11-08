@@ -60,7 +60,7 @@ p {
     background-repeat:no-repeat;
     background-size: cover;
     height:100vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 
@@ -103,7 +103,13 @@ p {
 .job_text{
     flex: 1;
 }
-
+.job_contents h4{
+    font-size: clamp(28px, 2.3vw, 40px);
+    font-weight: bolder;
+    margin-bottom: 10vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    color:#004aad;
+}
 
 /* ボタンスタイル */
 .next-btn {
@@ -118,6 +124,7 @@ p {
     border-radius: 50px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ほんのり影 */
+    margin-top: 5vh;
 }
 
 /* ホバー時の効果 */
@@ -162,6 +169,8 @@ p {
     display: inline-block;
     margin-top: 2vh;
 }
+
+
 
 
 /*レスポンシブ*/
