@@ -43,7 +43,7 @@ main {
     /* 背景色を常に白に設定 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* 影を濃くする */
-    /* スクロール時の影追加 */
+    /* スクロール時の影を追加 */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     border-radius: 15px;
     /* 角を丸くする */
@@ -350,109 +350,169 @@ main {
     }
 }
 
-.steps-container {
-    width: 65%; /* デフォルトの幅を50%に設定 */
-    margin: 0 auto; /* 中央寄せ */
-    padding: 20px;
-    background-color: #f9f9f9;
-    font-size: 1.5rem; /* フォントサイズをさらに大きくする */
+.troubles-section {
+    background: linear-gradient(135deg, #e0e7ff 0%, #c0c7ff 100%);
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
-.step-number {
-    color: #0056b3; /* テキストの色を青色に変更 */
-    font-weight: 900; /* テキストをより太字に */
-    margin-right: 20px;
-    font-size: 1.6rem; /* ステップ番号のフォントサイズをさらに大きくする */
-}
-
-.step-description {
-    flex-grow: 1;
+.troubles-section h2,
+.qa-section h2 {
+    font-family: 'SUSE', sans-serif;
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 1.5rem; /* 説明のフォントサイズをさらに大きくする */
+    color: #1a3e5c; /* 画像の色合いに合わせる */
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    text-transform: none; /* 大文字変換を解除 */
+    letter-spacing: normal; /* 文字間隔を通常に */
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* 短い下線を削除 */
+.troubles-section h2::after,
+.qa-section h2::after {
+    content: none;
+}
+
+.troubles-list {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.troubles-list li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.troubles-list li:hover {
+    background-color: #e9ecef;
+    transform: translateY(-5px);
+}
+
+.troubles-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    color: #004aad;
+}
+
+.troubles-section p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 1200px) {
-    .steps-container {
-        width: 100%; /* 画面幅いっぱいに設定 */
-        font-size: 1.3rem; /* フォントサイズを小さくする */
-    }
-
-    .step-number {
-        font-size: 1.4rem; /* ステップ番号のフォントサイズを小さくする */
-    }
-
-    .step-description {
-        font-size: 1.3rem; /* 説明のフォントサイズを小さくする */
-    }
-}
-
 @media (max-width: 768px) {
-    .steps-container {
-        font-size: 1.1rem; /* タブレットサイズでフォントサイズをさらに小さくする */
+    .troubles-section {
+        padding: 30px 20px; /* パディングを調整 */
     }
 
-    .step-number {
-        font-size: 1.2rem; /* ステップ番号のフォントサイズをさらに小さくする */
+    .troubles-section h2 {
+        font-size: 2.5rem; /* フォントサイズを調整 */
     }
 
-    .step-description {
-        font-size: 1.1rem; /* 説明のフォントサイズをさらに小さくする */
+    .troubles-list li {
+        font-size: 1.2rem; /* フォントサイズを調整 */
+    }
+
+    .troubles-section p {
+        font-size: 1.1rem; /* フォントサイズを調整 */
     }
 }
 
 @media (max-width: 480px) {
-    .steps-container {
-        font-size: 0.9rem; /* スマートフォンサイズでフォントサイズをさらに小さくする */
+    .troubles-section {
+        padding: 20px 15px; /* パディングをさらに調整 */
     }
 
-    .step-number {
-        font-size: 1rem; /* ステップ番号のフォントサイズを小さくする */
+    .troubles-section h2 {
+        font-size: 2rem; /* フォントサイズをさらに調整 */
     }
 
-    .step-description {
-        font-size: 0.9rem; /* 説明のフォントサイズをさらに小さくする */
+    .troubles-list li {
+        font-size: 1rem; /* フォントサイズをさらに調整 */
+    }
+
+    .troubles-section p {
+        font-size: 1rem; /* フォントサイズをさらに調整 */
     }
 }
-.step {
+
+.card-section {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    position: relative;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.card {
     background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none; /* 枠線を消す */
 }
 
-.step-number {
-    color: #0056b3; /* テキストの色を青色に変更 */
-    font-weight: 900; /* テキストをより太字に */
-    margin-right: 20px;
-    font-size: 1.6rem; /* ステップ番号のフォントサイズをさらに大きくする */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.step-description {
-    flex-grow: 1;
+.card-icon {
+    font-size: 4rem; /* アイコンのサイズを大きく */
+    color: #004aad;
+    margin-bottom: 20px; /* 余白を調整 */
+}
+
+.card h3 {
+    font-size: 2rem; /* 見出しのフォントサイズを大きく */
     font-weight: bold;
-    font-size: 1.5rem; /* 説明のフォントサイズをさらに大きくする */
+    margin-bottom: 15px; /* 余白を調整 */
 }
 
-.step:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 20px;
-    width: 2px;
-    height: 20px;
-    background-color: #ccc;
+.card p {
+    font-size: 1.2rem; /* テキストのフォントサイズを大きく */
+    color: #555;
 }
 
-.step::before {
-    content: '▼';
-    position: absolute;
-    right: 20px;
-    font-size: 24px;
-    color: #ccc;
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }
 
 .qa-section {
@@ -500,89 +560,63 @@ main {
     color: #333;
 }
 
-/* レスポンシブ対 */
+/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .qa-question {
-        font-size: 1rem;
-        /* フォントサイズを少し小さく */
-        padding: 10px;
-        /* パディングを調整 */
+        font-size: 1rem; /* フォントサイズを少し小さく */
+        padding: 10px; /* パディングを調整 */
     }
 
     .qa-answer {
-        font-size: 0.9rem;
-        /* フォントサイズを少し小さく */
+        font-size: 0.9rem; /* フォントサイズを少し小さく */
     }
 }
 
 @media (max-width: 480px) {
     .qa-question {
-        font-size: 0.9rem;
-        /* フォントサイズをさらに小さく */
-        padding: 8px;
-        /* パディングをさらに調整 */
+        font-size: 0.9rem; /* フォントサイズをさらに小さく */
+        padding: 8px; /* パディングをさらに調整 */
     }
 
     .qa-answer {
-        font-size: 0.8rem;
-        /* フォントサイズをさらに小さく */
+        font-size: 0.8rem; /* フォントサイズをさらに小さく */
     }
 }
 
 .text-center {
-    font-size: 1.5rem;
-    /* フォントサイズを大きく */
-    font-weight: bold;
-    /* 太字にする */
+    font-size: 1.5rem; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字にする */
+    color: #333; /* テキストカラーを調整 */
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    font-size: 1.2rem;
     color: #333;
-    /* テキストカラーを調整 */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    counter-reset: item;
 }
 
-.head_container {
-    max-width: 60%; /* コンテナの最大幅を60%に狭くする */
-    margin: 0 auto; /* 左右のマージンを自動にして中央寄せ */
-    padding: 20px; /* パディングを追加 */
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    counter-increment: item;
 }
 
-/* レスポンシブ対応 */
-@media (max-width: 1200px) {
-    .steps-container {
-        font-size: 1.3rem; /* フォントサイズを小さくする */
-    }
-
-    .step-number {
-        font-size: 1.4rem; /* ステップ番号のフォントサイズを小さくする */
-    }
-
-    .step-description {
-        font-size: 1.3rem; /* 説明のフォントサイズを小さくする */
-    }
+.custom-list li:hover {
+    transform: translateY(-5px);
 }
 
-@media (max-width: 768px) {
-    .steps-container {
-        font-size: 1.1rem; /* タブレットサイズでフォントサイズをさらに小さくする */
-    }
-
-    .step-number {
-        font-size: 1.2rem; /* ステップ番号のフォントサイズをさらに小さくする */
-    }
-
-    .step-description {
-        font-size: 1.1rem; /* 説明のフォントサイズをさらに小さくする */
-    }
-}
-
-@media (max-width: 480px) {
-    .steps-container {
-        font-size: 0.8rem; /* スマートフォンサイズでフォントサイズをさらに小さくする */
-    }
-
-    .step-number {
-        font-size: 0.9rem; /* ステップ番号のフォントサイズを小さくする */
-    }
-
-    .step-description {
-        font-size: 0.8rem; /* 説明のフォントサイズをさらに小さくする */
-    }
+.custom-list li::before {
+    content: counter(item) ".";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004aad;
+    margin-right: 10px;
 }
