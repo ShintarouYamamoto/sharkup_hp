@@ -227,3 +227,8 @@ body {
 .footer_text p {
     color: #ccc;
 }
+
+/* メインコンテンツとフッターの間の余白を追加 */
+main {
+    margin-bottom: 50px; /* 余白の大きさを調整してください */
+}
