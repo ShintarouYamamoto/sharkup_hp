@@ -148,15 +148,13 @@ main {
 }
 
 /* フッター */
+
 #footer {
     /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
     background-color: #001f3f;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-/* #footer .container{
-    color: #000;
-} */
 #footer .footer-ttl {
     font-size: 1.5rem;
     font-weight: bold;
@@ -189,13 +187,11 @@ main {
     color: #ccc;
 }
 
-#footer img {
-    width: 360px;
-}
 
 .footer_text p {
     color: #ccc;
 }
+
 @media screen and (min-width: 1200px) {
 
     #footer #footer-contents>div {
@@ -209,12 +205,13 @@ main {
     }
 
     #footer img {
-        width: 100%;
+        width: 30%;
     }
 
 }
 
-
+/* 中デバイス（タブレット, 992px 未満）
+==============================================*/
 @media screen and (max-width:991.98px) {
     #footer #footer-contents>div {
         border-bottom: 1px solid #ccc;
@@ -224,32 +221,38 @@ main {
     }
 
     #footer img {
-        width: 100%;
+        width: 40%;
         max-width: 748px;
         margin: 0 auto;
     }
+
 }
 
+/* END */
+
+/* 小デバイス（横向きモバイル, 768px 未満）
+==============================================*/
 @media screen and (max-width:767.98px) {
+
     #footer #footer-contents>div:first-child {
-            border-right: none !important;
-        }
-    
-        #footer .container {
-            padding-top: 0px;
-        }
-    
-        #footer .container .row {
-            margin-bottom: 0;
-        }
-    
-        #footer #copyright {
-            font-size: 0.8rem;
-        }
-    
-        #footer h2 {
-            margin: 2rem 0;
-        }
+        border-right: none !important;
+    }
+
+    #footer .container {
+        padding-top: 0px;
+    }
+
+    #footer .container .row {
+        margin-bottom: 0;
+    }
+
+    #footer #copyright {
+        font-size: 0.8rem;
+    }
+
+    #footer h2 {
+        margin: 2rem 0;
+    }
 }
 
 
