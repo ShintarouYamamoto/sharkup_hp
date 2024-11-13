@@ -100,10 +100,10 @@ section {
     color: #004aad;
 }
 
-.map-container {
+/* .map-container {
     text-align: center;
     margin-bottom: 10vh;
-}
+} */
 
 .section-bg {
     background-color: #f8f9fa;
@@ -111,33 +111,6 @@ section {
     overflow: hidden;
 }
 
-.card-title{
-    color:#004aad;
-    font-size: clamp(20px, 2vw, 48px);
-}
-
-.card {
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin-bottom: 30px;
-    /* min-height: 20vh; */
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* 内容を均等に配置 */
-}
-
-.card-text{
-    font-size: clamp(16px, 1.5vw, 32px);
-}
 
 .map-container iframe {
     width: 100%;

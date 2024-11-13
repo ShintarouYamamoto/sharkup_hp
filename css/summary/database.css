@@ -586,3 +586,249 @@ main {
         font-size: 0.8rem; /* 説明のフォントサイズをさらに小さくする */
     }
 }
+
+
+
+/* 各サービスへ */
+.business-section {
+    /* background-color: #6c6c6c; */
+    font-family: 'Noto Sans JP', sans-serif;
+    /* 背景色を設定 */
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.business-section h2 {
+    color: #004aad;
+    font-weight: bold;
+    font-size: clamp(30px, 4.5vw, 60px);
+    margin-bottom: 2rem;
+}
+
+
+.business-link-item {
+    text-align: center;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.business-link-item a {
+    position: relative;
+    display: inline-block;
+    color: #555;
+    font-size: clamp(16px, 1.3vw, 32px);
+    font-weight: bold;
+    text-decoration: none;
+    /* カスタムアンダーラインを使うために標準のアンダーラインは消す */
+    overflow: hidden;
+}
+
+/* アンダーラインのスタイル */
+.business-link-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #181818;
+    /* 初期のアンダーラインの色 */
+    transform: scaleX(0);
+    /* アンダーラインを最初は隠す */
+    transform-origin: left;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    /* アニメーション */
+}
+
+/* ホバー時にアンダーラインと文字の色が左から右に変わる */
+.business-link-item a:hover::before {
+    transform: scaleX(1);
+    /* アンダーラインを表示 */
+    background-color: #004aad;
+    /* アンダーラインの色を変更 */
+}
+
+.business-link-item a:hover {
+    color: #004aad;
+    /* 文字色もホバー時に変更 */
+    transition: color 0.4s ease;
+    /* 文字色が変わるアニメーション */
+}
+
+.business-link-item a:hover::after {
+    color: #004aad;
+    /* 文字色もホバー時に変更 */
+    transition: color 0.4s ease;
+    /* 文字色が変わるアニメーション */
+}
+
+/* 矢印のスタイル */
+.business-link-item a::after {
+    content: '\2192';
+    /* 矢印の文字コード */
+    color: #181818;
+    margin-left: 10px;
+    font-size: clamp(8px, 1.3vw, 32px);
+    vertical-align: middle;
+}
+
+/* 小さい画面でのレスポンシブ対応 */
+@media (max-width: 768px) {
+    .business-link-item {
+        text-align: left;
+        padding-left: 1.5rem;
+        /* 左右に余白を加える */
+        padding-right: 1.5rem;
+    }
+
+    .business-link-item a {
+        font-size: clamp(16px, 2vw, 32px);
+    }
+
+    .business-link-item a::after {
+        font-size: clamp(10px, 1.6vw, 32px);
+    }
+
+}
+
+
+/* お問い合わせ */
+.question {
+    margin-top: 6vh;
+    margin-bottom: 10vh;
+}
+
+.text-content {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.text-content h2 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-bottom: 3vh;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.cta-button {
+    background-color: #997D57;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2vh;
+}
+
+
+
+/* フッター */
+
+#footer {
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-color: #001f3f;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#footer .footer-ttl {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #ccc;
+}
+
+#footer address p,
+#footer #footer-news li {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    outline: none;
+}
+
+#footer #footer-news ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer #footer-news ul {
+    list-style: none;
+}
+
+#footer #footer-news li span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+#footer #copyright {
+    color: #ccc;
+}
+
+
+.footer_text p {
+    color: #ccc;
+}
+
+@media screen and (min-width: 1200px) {
+
+    #footer #footer-contents>div {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-collaps: collapse;
+    }
+
+    #footer #footer-contents>div:last-child {
+        border-right: 1px solid #ccc;
+    }
+
+    #footer img {
+        width: 30%;
+    }
+
+}
+
+/* 中デバイス（タブレット, 992px 未満）
+==============================================*/
+@media screen and (max-width:991.98px) {
+    #footer #footer-contents>div {
+        border-bottom: 1px solid #ccc;
+        border-left: none;
+        border-right: none;
+        padding-bottom: 1rem;
+    }
+
+    #footer img {
+        width: 40%;
+        max-width: 748px;
+        margin: 0 auto;
+    }
+
+}
+
+/* END */
+
+/* 小デバイス（横向きモバイル, 768px 未満）
+==============================================*/
+@media screen and (max-width:767.98px) {
+
+    #footer #footer-contents>div:first-child {
+        border-right: none !important;
+    }
+
+    #footer .container {
+        padding-top: 0px;
+    }
+
+    #footer .container .row {
+        margin-bottom: 0;
+    }
+
+    #footer #copyright {
+        font-size: 0.8rem;
+    }
+
+    #footer h2 {
+        margin: 2rem 0;
+    }
+}

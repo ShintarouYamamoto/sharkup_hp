@@ -260,7 +260,7 @@ section {
     position: relative;
     display: inline-block;
     color: #555;
-    font-size: clamp(16px, 2.3vw, 32px);
+    font-size: clamp(16px, 1.3vw, 32px);
     font-weight: bold;
     text-decoration: none;
     /* カスタムアンダーラインを使うために標準のアンダーラインは消す */
@@ -311,7 +311,7 @@ section {
     /* 矢印の文字コード */
     color: #181818;
     margin-left: 10px;
-    font-size: clamp(8px, 1.8vw, 32px);
+    font-size: clamp(8px, 1.3vw, 32px);
     vertical-align: middle;
 }
 
@@ -321,14 +321,21 @@ section {
             text-align: left;
             padding-left: 1.5rem;/* 左右に余白を加える */
             padding-right: 1.5rem;
-        }
+    }
+    .business-link-item a {
+        font-size: clamp(16px, 2vw, 32px);
+    }
+
+    .business-link-item a::after {
+        font-size: clamp(10px, 1.6vw, 32px);
+    }
 
 }
 
 
 /* お問い合わせ */
 .question {
-    margin-top: 13vh;
+    margin-top: 6vh;
     margin-bottom: 10vh;
 }
 
@@ -426,9 +433,6 @@ section {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-/* #footer .container{
-    color: #000;
-} */
 #footer .footer-ttl {
     font-size: 1.5rem;
     font-weight: bold;
@@ -461,9 +465,6 @@ section {
     color: #ccc;
 }
 
-#footer img {
-    width: 360px;
-}
 
 .footer_text p {
     color: #ccc;
